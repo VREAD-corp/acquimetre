@@ -1,0 +1,18 @@
+{
+  "order_id": "exemple-gestion-temps",
+  "company": "Organisme de formation (exemple)",
+  "courses": 1,
+  "sample": true,
+  "files": [
+    {
+      "course": 1,
+      "course_title": "Gestion professionnelle du temps",
+      "file": "C01/programme-gestion-professionnelle-du-temps.docx"
+    },
+    {
+      "course": 1,
+      "course_title": "Gestion professionnelle du temps",
+      "file": "C01/support-gestion-professionnelle-du-temps.pdf"
+    }
+  ]
+}

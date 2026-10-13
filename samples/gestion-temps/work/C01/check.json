@@ -1,0 +1,884 @@
+{
+ "course": 1,
+ "title": "Gestion professionnelle du temps",
+ "ok": true,
+ "items": [
+  {
+   "objective": 1,
+   "type": "mcq",
+   "question": "Selon vous, à quoi sont dues la plupart des pertes subies par les entreprises et les organisations ?",
+   "answer": "À un manque de gestion du temps",
+   "choices": [
+    "À un manque de gestion du temps",
+    "À la hausse des coûts de l’énergie",
+    "À un manque de trésorerie",
+    "À l’évolution de la réglementation"
+   ],
+   "source_quote": "La plupart des pertes subies par les entreprises et par les organisations sont dues à un manque de gestion du temps",
+   "id": "P1",
+   "instrument": "positioning",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 4"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 1,
+   "type": "word",
+   "question": "Comment appelle-t-on le fait de tout remettre au lendemain ? (un mot)",
+   "answer": "procrastination",
+   "source_quote": "On peut parler de la procrastination, il s’agit du fait de tout remettre au lendemain",
+   "id": "P2",
+   "instrument": "positioning",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 5"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": true,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 2,
+   "type": "mcq",
+   "question": "Que signifie le sigle NERAC, utilisé pour organiser son travail ?",
+   "answer": "Noter, Estimer, Réserver, Arbitrer, Contrôler",
+   "choices": [
+    "Noter, Estimer, Réserver, Arbitrer, Contrôler",
+    "Nommer, Évaluer, Répartir, Animer, Clôturer",
+    "Négocier, Exécuter, Relancer, Analyser, Classer",
+    "Noter, Exécuter, Rédiger, Archiver, Communiquer"
+   ],
+   "source_quote": "Signifie Noter, Estimer, Réserver, Arbitrer, Contrôler",
+   "id": "P3",
+   "instrument": "positioning",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 10"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 2,
+   "type": "mcq",
+   "question": "Dans quel ordre se succèdent les étapes d’une bonne organisation du temps ?",
+   "answer": "Fixer les objectifs, planifier, décider, contrôler",
+   "choices": [
+    "Fixer les objectifs, planifier, décider, contrôler",
+    "Planifier, contrôler, fixer les objectifs, décider",
+    "Décider, planifier, contrôler, fixer les objectifs",
+    "Contrôler, décider, fixer les objectifs, planifier"
+   ],
+   "source_quote": "Fixation des objectifs et des enjeux : il s’agit donc alors de déterminer la durée d’une tâche, d’un projet, et son délai de réalisation Une phase de planification et d’organisation",
+   "id": "P4",
+   "instrument": "positioning",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 6"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 3,
+   "type": "mcq",
+   "question": "D’après la loi de Pareto appliquée au temps de travail, quelle part du temps l’essentiel occupe-t-il ?",
+   "answer": "20 %",
+   "choices": [
+    "20 %",
+    "50 %",
+    "80 %",
+    "95 %"
+   ],
+   "source_quote": "Selon cette loi, l'essentiel prend 20 % du temps et l'accessoire occupe 80 % du temps restant",
+   "id": "P5",
+   "instrument": "positioning",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 14"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 3,
+   "type": "mcq",
+   "question": "En combien de classes l’analyse ABC répartit-elle des produits ou des tâches ?",
+   "answer": "Trois",
+   "choices": [
+    "Deux",
+    "Trois",
+    "Quatre",
+    "Cinq"
+   ],
+   "source_quote": "l’analyse ABC catégorise les produits en trois classes",
+   "id": "P6",
+   "instrument": "positioning",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 16"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 4,
+   "type": "word",
+   "question": "Quelle méthode mesure le temps alloué à chaque tâche administrative répétitive en faisant exécuter une série de tâches par une personne expérimentée ? (un mot)",
+   "answer": "pendulage",
+   "source_quote": "La méthode du pendulage est une technique qui mesure le temps alloué à chaque tâche",
+   "id": "P7",
+   "instrument": "positioning",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 8"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": true,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 4,
+   "type": "mcq",
+   "question": "Selon la méthode des paquets, par cycles de quelle durée un adulte peut-il travailler efficacement ?",
+   "answer": "90 minutes",
+   "choices": [
+    "45 minutes",
+    "60 minutes",
+    "90 minutes",
+    "120 minutes"
+   ],
+   "source_quote": "les adultes instruits ne peuvent être efficients que par cycles de 90 minutes",
+   "id": "P8",
+   "instrument": "positioning",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 7"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 5,
+   "type": "mcq",
+   "question": "Dans un diagramme de Gantt, que représente l’axe horizontal (abscisses) ?",
+   "answer": "L’échelle des temps",
+   "choices": [
+    "L’échelle des temps",
+    "L’échelle des tâches",
+    "Les coûts",
+    "Les responsables"
+   ],
+   "source_quote": "L'échelle des temps est représentée en abscisses et l'échelle des tâches en ordonnées",
+   "id": "P9",
+   "instrument": "positioning",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 21"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 5,
+   "type": "mcq",
+   "question": "Que signifie le sigle QQOQCCP ?",
+   "answer": "Qui, Quoi, Où, Quand, Comment, Combien, Pourquoi",
+   "choices": [
+    "Qui, Quoi, Où, Quand, Comment, Combien, Pourquoi",
+    "Qualité, Quantité, Organisation, Qualification, Contrôle, Coût, Planning",
+    "Question, Quiz, Objectif, Quotidien, Calendrier, Cycle, Priorité",
+    "Qui, Quand, Objectif, Quoi, Coût, Contrôle, Plan"
+   ],
+   "source_quote": "QQOQCCP signifie Qui, Quoi, Où, Quand, Comment, Combien, Pourquoi",
+   "id": "P10",
+   "instrument": "positioning",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 12"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 1,
+   "type": "mcq",
+   "question": "Le cours classe les conditions qui font perdre du temps en trois familles. Lesquelles ?",
+   "answer": "Économiques, matérielles, socioculturelles et psychologiques",
+   "choices": [
+    "Économiques, matérielles, socioculturelles et psychologiques",
+    "Fiscales, juridiques et sociales",
+    "Techniques, commerciales et financières",
+    "Individuelles, collectives et numériques"
+   ],
+   "source_quote": "On peut distinguer des conditions : Economiques : comme les conditions de travail Matérielles: les outils de travail la qualité du cadre de travail Socioculturelle et psychologiques : la communication",
+   "id": "F1",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 5"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 1,
+   "type": "word",
+   "question": "Complétez : selon le cours, les maîtres mots des gains de temps sont l’organisation et la … (un mot)",
+   "answer": "communication",
+   "source_quote": "Les maîtres mots des gains de temps sont finalement l’organisation et la communication",
+   "id": "F2",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 5"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": true,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 1,
+   "type": "mcq",
+   "question": "Le temps de travail diminue et l’entreprise veut produire autant. Quel moyen le cours ne cite-t-il PAS pour compenser la perte de production ?",
+   "answer": "Une baisse des prix de vente",
+   "choices": [
+    "Des embauches",
+    "Des heures complémentaires",
+    "Des progrès de productivité",
+    "Une baisse des prix de vente"
+   ],
+   "source_quote": "par d’éventuelles embauches par des heures complémentaires par des progrès de productivité",
+   "id": "F3",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 4"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 2,
+   "type": "mcq",
+   "question": "Vous estimez une tâche à 2 heures et appliquez la réserve de 40 % de l’exemple NERAC du cours. Quelle durée planifiez-vous ?",
+   "answer": "2 h 48",
+   "choices": [
+    "2 h 08",
+    "2 h 24",
+    "2 h 40",
+    "2 h 48"
+   ],
+   "source_quote": "on se réserve 40 % de temps en plus, pour survenir aux éventuels imprévus (Réserver), c'est-à-dire 2 heures auxquelles on ajoute 48 minutes",
+   "explanation": "2 h × 1,40 = 2,8 h, soit 2 heures et 48 minutes.",
+   "id": "F4",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 10"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 2,
+   "type": "word",
+   "question": "Dans la méthode NERAC, à quelle étape définit-on pour chaque tâche son degré d’importance ou d’urgence ? (un verbe)",
+   "answer": "Arbitrer|Arbitre",
+   "source_quote": "De plus, on Arbitre en nommant les évènements prioritaires. Autrement dit, pour chaque tâche on définira le degré d'importance et/ou d'urgence",
+   "id": "F5",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 10"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": true,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 2,
+   "type": "mcq",
+   "question": "Lors de l’étape de contrôle du déroulement du travail, que compare-t-on ?",
+   "answer": "Le travail réalisé et ce qui avait été prévu",
+   "choices": [
+    "Le travail réalisé et ce qui avait été prévu",
+    "Les salaires et le chiffre d’affaires",
+    "Les horaires de deux services",
+    "Les devis de plusieurs fournisseurs"
+   ],
+   "source_quote": "réaliser des comparaisons entre le travail réalisé et ce qui avait été prévu lors de la phase de planification",
+   "id": "F6",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 6"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 3,
+   "type": "mcq",
+   "question": "Dans l’exemple de l’atelier de fabrication, les références F, A et I représentent 3 types de réparations sur 10. Quelle part de la totalité des réparations représentent-elles ?",
+   "answer": "80 %",
+   "choices": [
+    "30 %",
+    "50 %",
+    "70 %",
+    "80 %"
+   ],
+   "source_quote": "les références \"F,A,I\" qui représentent 3 types de réparations sur 10 (soit 30%), représentent 80% de la totalité des réparations",
+   "id": "F7",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 14"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 3,
+   "type": "mcq",
+   "question": "Dans l’analyse ABC, que représentent en général les produits de la classe C ?",
+   "answer": "5 % de la valeur du stock et 50 % des produits",
+   "choices": [
+    "5 % de la valeur du stock et 50 % des produits",
+    "80 % de la valeur du stock et 20 % des produits",
+    "15 % de la valeur du stock et 30 % des produits",
+    "50 % de la valeur du stock et 5 % des produits"
+   ],
+   "source_quote": "\"Classe C\" : les produits de la classe C constituent en générale 5% de la valeur totale du stock et 50 % de la quantité totale des produits",
+   "id": "F8",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 16"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 3,
+   "type": "word",
+   "question": "L’analyse ABC repère aussi les articles qui ne tournent pas. Comment le cours appelle-t-il ces stocks ? Les stocks … (un mot)",
+   "answer": "morts",
+   "source_quote": "elle permet d’identifier les articles qui ne tournent pas, les stocks morts",
+   "id": "F9",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 16"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": true,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 4,
+   "type": "mcq",
+   "question": "Une assistante dispose de 330 minutes par jour pour enregistrer des contrats et en enregistre 55. Quel est le temps moyen d’exécution d’un contrat ?",
+   "answer": "6 minutes",
+   "choices": [
+    "5 minutes",
+    "6 minutes",
+    "7 minutes",
+    "8 minutes"
+   ],
+   "source_quote": "Temps d'exécution pour enregistrer un contrat : 6 minutes",
+   "explanation": "Temps global divisé par le nombre de tâches : 330 / 55 = 6 minutes.",
+   "id": "F10",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 8"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 4,
+   "type": "mcq",
+   "question": "Pour quel type d’activité le pendulage n’est-il PAS adapté ?",
+   "answer": "Les activités intellectuelles",
+   "choices": [
+    "Les activités intellectuelles",
+    "La saisie des commandes",
+    "La mise sous enveloppe des lettres",
+    "La saisie de variables"
+   ],
+   "source_quote": "la méthode de pendulage n’est pas adaptée à des activités intellectuelles",
+   "id": "F11",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 9"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 4,
+   "type": "mcq",
+   "question": "Dans l’exemple de la grille d’auto-analyse du temps, que conseille le cours pour traiter les e-mails ?",
+   "answer": "Réserver des plages horaires à la lecture et à la rédaction des réponses",
+   "choices": [
+    "Réserver des plages horaires à la lecture et à la rédaction des réponses",
+    "Répondre à chaque e-mail dès son arrivée",
+    "Désactiver la messagerie pendant la semaine",
+    "Confier la lecture des e-mails à un collègue"
+   ],
+   "source_quote": "il est convenable de réserver des plages horaires à la lecture et à la rédaction des réponses",
+   "id": "F12",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 18"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 5,
+   "type": "mcq",
+   "question": "Quel outil met en évidence le chemin critique des tâches d’un projet afin d’en limiter la durée ?",
+   "answer": "Le diagramme de PERT",
+   "choices": [
+    "Le diagramme de PERT",
+    "Le calendrier partagé",
+    "La pointeuse",
+    "La carte heuristique"
+   ],
+   "source_quote": "Ce dernier permet de mettre en évidence le chemin critique des tâches et/ou des opérations qui définissent un projet",
+   "id": "F13",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 22"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 5,
+   "type": "mcq",
+   "question": "À quelle condition le calendrier partagé est-il un outil très efficace ?",
+   "answer": "S’il est correctement renseigné par tous",
+   "choices": [
+    "S’il est correctement renseigné par tous",
+    "S’il est réservé au dirigeant",
+    "S’il est imprimé chaque semaine",
+    "S’il remplace les réunions"
+   ],
+   "source_quote": "Le calendrier partagé est un outil très efficace s’il est correctement renseigné par tous",
+   "id": "F14",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 20"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 5,
+   "type": "word",
+   "question": "Quand il est difficile de répondre aux questions du QQOQCCP, le cours propose de faire le cheminement… (un mot)",
+   "answer": "inverse",
+   "source_quote": "il faut faire le cheminement inverse",
+   "id": "F15",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 12"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": true,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 1,
+   "type": "mcq",
+   "question": "Dans votre service, les réunions démarrent souvent en retard et des collègues vous interrompent sans prévenir. Comment le cours qualifie-t-il ces situations ?",
+   "answer": "Des facteurs de pertes de temps",
+   "choices": [
+    "Des facteurs de pertes de temps",
+    "Des coûts d’opportunité positifs",
+    "Des outils de priorisation",
+    "Des contraintes de temps externes"
+   ],
+   "source_quote": "Les facteurs de pertes de temps sont aussi : les réunions trop longues et trop fréquentes en entreprise, qui ne démarrent pas à l’heure, les visites intempestives, les interruptions incontrôlées des collaborateurs",
+   "id": "J1",
+   "instrument": "j30",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 5"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 1,
+   "type": "mcq",
+   "question": "Pourquoi le cours présente-t-il le temps comme une ressource rare pour l’entreprise ?",
+   "answer": "Parce qu’il est non renouvelable",
+   "choices": [
+    "Parce qu’il est non renouvelable",
+    "Parce qu’il est fixé par les clients",
+    "Parce qu’il ne se mesure pas",
+    "Parce qu’il dépend du niveau des stocks"
+   ],
+   "source_quote": "Le temps est donc une ressource rare et non renouvelable",
+   "id": "J2",
+   "instrument": "j30",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 4"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 2,
+   "type": "mcq",
+   "question": "Vous appliquez NERAC à la préparation d’un rapport. Vous venez de lister les tâches sans vous soucier de leur ordre ni de leur durée. Quelle est l’étape suivante ?",
+   "answer": "Estimer la durée de chaque tâche",
+   "choices": [
+    "Estimer la durée de chaque tâche",
+    "Contrôler les écarts",
+    "Arbitrer les priorités",
+    "Réserver du temps pour les imprévus"
+   ],
+   "source_quote": "Ensuite, on Estime pour chacun de ces évènements un temps approximatif de leur durée d’exécution",
+   "id": "J3",
+   "instrument": "j30",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 10"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 2,
+   "type": "mcq",
+   "question": "Une tâche est estimée à 1 heure. Avec la même réserve de 40 % que dans l’exemple du cours, quel temps total prévoyez-vous ?",
+   "answer": "1 h 24",
+   "choices": [
+    "1 h 04",
+    "1 h 14",
+    "1 h 24",
+    "1 h 40"
+   ],
+   "source_quote": "on se réserve 40 % de temps en plus, pour survenir aux éventuels imprévus",
+   "explanation": "60 minutes × 1,40 = 84 minutes, soit 1 heure et 24 minutes.",
+   "id": "J4",
+   "instrument": "j30",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 10"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 3,
+   "type": "mcq",
+   "question": "Vous classez vos dossiers clients : 20 % d’entre eux font 80 % de la valeur. Dans quelle classe de l’analyse ABC les rangez-vous ?",
+   "answer": "Classe A",
+   "choices": [
+    "Classe A",
+    "Classe B",
+    "Classe C",
+    "Hors classement"
+   ],
+   "source_quote": "\"Classe A\" : les produits de la classe A constituent en générale 80% de la valeur totale du stock et 20 % de la quantité totale des produits",
+   "id": "J5",
+   "instrument": "j30",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 16"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 3,
+   "type": "mcq",
+   "question": "À quoi sert le diagramme de Pareto dans la gestion de votre temps ?",
+   "answer": "Ranger les tâches par priorité d’exécution sur une période",
+   "choices": [
+    "Ranger les tâches par priorité d’exécution sur une période",
+    "Calculer le temps moyen d’une tâche",
+    "Réserver une salle de réunion",
+    "Contrôler la ponctualité des salariés"
+   ],
+   "source_quote": "Pour la gestion du temps, cet outil permet de définir les tâches / les opérations par priorité d’exécution sur une période donnée",
+   "id": "J6",
+   "instrument": "j30",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 14"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 4,
+   "type": "mcq",
+   "question": "Vous animez un comité de direction d’une journée, très dense en informations. Que conseille la méthode des paquets de 90 minutes ?",
+   "answer": "Faire une pause toutes les 90 minutes et changer de sujet à chaque paquet",
+   "choices": [
+    "Faire une pause toutes les 90 minutes et changer de sujet à chaque paquet",
+    "Enchaîner tous les sujets sans pause",
+    "Limiter la réunion à 90 minutes au total",
+    "Commencer par les sujets les plus courts"
+   ],
+   "source_quote": "il convient de faire des pauses toutes les 90 minutes et idéalement de choisir un sujet différent par paquet de 90 minutes",
+   "id": "J7",
+   "instrument": "j30",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 7"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 4,
+   "type": "word",
+   "question": "Vous voulez fixer une norme de travail pour la saisie des commandes en chronométrant une personne expérimentée. Quelle méthode du cours utilisez-vous ? (un mot)",
+   "answer": "pendulage",
+   "source_quote": "Le pendulage est utilisé surtout pour fixer des normes de travail et d'organiser ce travail",
+   "id": "J8",
+   "instrument": "j30",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 8"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": true,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 5,
+   "type": "mcq",
+   "question": "Sur le diagramme de Gantt de votre projet, la ligne verticale tracée à la date du jour traverse une tâche. Qu’en concluez-vous ?",
+   "answer": "La tâche est en cours de réalisation",
+   "choices": [
+    "La tâche est en cours de réalisation",
+    "La tâche est terminée",
+    "La tâche n’a pas commencé",
+    "La tâche est sur le chemin critique"
+   ],
+   "source_quote": "Si la ligne vient à traverser des tâches, c’est que ces dernières sont en cours de réalisation",
+   "id": "J9",
+   "instrument": "j30",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 21"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  },
+  {
+   "objective": 5,
+   "type": "mcq",
+   "question": "Vous rédigez une procédure et voulez décrire la situation sans rien oublier. Quelle méthode du cours employez-vous ?",
+   "answer": "QQOQCCP",
+   "choices": [
+    "QQOQCCP",
+    "Le pendulage",
+    "L’analyse ABC",
+    "La pointeuse"
+   ],
+   "source_quote": "Cette méthode est généralement employée dans la résolution de problèmes, dans la définition d’un projet, ou encore dans la rédaction d’une procédure",
+   "id": "J10",
+   "instrument": "j30",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 12"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null
+   },
+   "problems": []
+  }
+ ],
+ "problems": [],
+ "counts": {
+  "positioning": 10,
+  "final": 15,
+  "j30": 10
+ }
+}

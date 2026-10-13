@@ -1,0 +1,28 @@
+{
+  "name": "acquimetre",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Acquimètre: évaluations Qualiopi indicateurs 8 et 11 rédigées à partir des supports de cours du client (service, READ FRANCE SAS). Site public + outil de production hors ligne.",
+  "type": "module",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "READ FRANCE SAS",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "engine": "tsx engine/cli.ts",
+    "sample": "tsx engine/cli.ts all samples/gestion-temps",
+    "test": "node scripts/build.mjs && node --import tsx --test tests/*.test.mjs tests/*.test.ts",
+    "e2e": "node scripts/build.mjs && node --test tests/e2e/*.e2e.mjs"
+  },
+  "dependencies": {
+    "docx": "9.9.0",
+    "jszip": "3.10.2",
+    "mammoth": "1.13.0",
+    "marked": "16.4.2",
+    "pdf-parse": "1.1.4",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "playwright": "1.64.0",
+    "tsx": "4.23.15"
+  }
+}

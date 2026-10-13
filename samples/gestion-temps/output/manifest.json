@@ -1,0 +1,21 @@
+{
+  "order_id": "exemple-gestion-temps",
+  "zip": "acquimetre-evaluations-8-11-exemple-gestion-temps.zip",
+  "sha256": "6b77f6dcfea68bf5678ce0aaf53dfd5d92e6e242a9a40f4813174cf62603280f",
+  "files": [
+    "00-lisez-moi.pdf",
+    "C01-gestion-professionnelle-du-temps/C01-1-positionnement-stagiaire.docx",
+    "C01-gestion-professionnelle-du-temps/C01-1-positionnement-stagiaire.pdf",
+    "C01-gestion-professionnelle-du-temps/C01-2-fin-de-formation-stagiaire.docx",
+    "C01-gestion-professionnelle-du-temps/C01-2-fin-de-formation-stagiaire.pdf",
+    "C01-gestion-professionnelle-du-temps/C01-3-j30-stagiaire.docx",
+    "C01-gestion-professionnelle-du-temps/C01-3-j30-stagiaire.pdf",
+    "C01-gestion-professionnelle-du-temps/C01-4-corriges-baremes-sources.docx",
+    "C01-gestion-professionnelle-du-temps/C01-4-corriges-baremes-sources.pdf",
+    "C01-gestion-professionnelle-du-temps/C01-5-fiche-resultats-stagiaire.docx",
+    "C01-gestion-professionnelle-du-temps/C01-5-fiche-resultats-stagiaire.pdf",
+    "C01-gestion-professionnelle-du-temps/C01-questions.csv",
+    "dossier-preuves-indicateurs-8-11.docx",
+    "dossier-preuves-indicateurs-8-11.pdf"
+  ]
+}

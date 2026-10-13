@@ -1,0 +1,650 @@
+===== C01/programme-gestion-professionnelle-du-temps.docx (docx, 333 mots)
+--- document
+Programme : Gestion professionnelle du temps
+
+Exemple de fiche programme construite pour l’échantillon Acquimètre à partir de la leçon Wikiversité « Gestion professionnelle du temps » (CC BY-SA 4.0). La durée, le public et les modalités sont des valeurs d’exemple.
+
+Présentation
+
+La gestion du temps exerce une contrainte multiforme sur l'activité économique et sur la gestion des entreprises. Ainsi, dans un contexte de forte concurrence et de profondes mutations économiques, sociales et technologiques, le temps de travail est une variable fondamentale d'ajustement de l'entreprise à son environnement. La qualité du management du temps de travail constitue un levier puissant de compétitivité des entreprises et des organisations. Toute performance se mesure par rapport à une durée de réalisation.
+
+Objectifs (texte de la leçon)
+
+Découvrir des outils de développement des capacités personnelles en management et en efficacité du travail
+
+Découvrir un ensemble de techniques simples et d’outils pratiques d'organisation
+
+Permettre de minimiser le temps perdu
+
+Permettre de maximiser le temps gagné
+
+Cette leçon est donc là pour vous aider à vous organiser individuellement ou collectivement à l'aide de différents concepts et outils.
+
+Prérequis (texte de la leçon)
+
+Cette page est accessibles à tous les professionnels, quels que soient leurs métiers, afin d'organiser et d'optimiser le temps de travail.
+
+Public, durée et modalités (exemple)
+
+Public : salariés, managers et assistants de toute fonction.
+
+Durée : 7 heures (1 jour), en présentiel ou à distance.
+
+Évaluation : test de positionnement à l’entrée, évaluation des acquis en fin de formation, évaluation à froid à J+30.
+
+Plan
+
+Historique
+
+Objectifs et organisation de la gestion du temps
+
+Méthode des paquets de 90 minutes
+
+Le pendulage
+
+La méthode Nerac
+
+QQOQCCP
+
+Le principe de Pareto
+
+L'analyse ABC
+
+La grille d'auto analyse du temps
+
+Outils de gestion du temps
+
+Source et licence
+
+Leçon « Gestion professionnelle du temps » de Wikiversité (https://fr.wikiversity.org/wiki/Gestion_professionnelle_du_temps), contributeurs de Wikiversité, licence CC BY-SA 4.0. Pages « Présentation de la leçon » (révision 937931), « Objectifs » (révision 969775) et « Prérequis conseillés » (révision 938937), extraites le 13/10/2026.
+
+===== C01/support-gestion-professionnelle-du-temps.pdf (pdf, 5313 mots)
+--- p. 1
+SUPPORT DE COURS
+Gestion professionnelle du temps
+10 chapitres : historique, enjeux et pertes de temps, paquets de 90 minutes, pendulage,
+méthode NERAC, QQOQCCP, principe de Pareto, analyse ABC, grille d’auto-analyse du temps,
+outils de planification.
+Source et licence
+Texte : leçon « Gestion professionnelle du temps » de Wikiversité,
+https://fr.wikiversity.org/wiki/Gestion_professionnelle_du_temps, par les contributeurs de
+Wikiversité (historique des pages sur le site). Licence Creative Commons Attribution –
+Partage dans les mêmes conditions 4.0 (CC BY-SA 4.0),
+https://creativecommons.org/licenses/by-sa/4.0/deed.fr.
+Révisions utilisées (extraites le 13/10/2026) : Historique (révision 679268) ; Objectifs et
+organisation de la gestion du temps (révision 969785) ; Méthode des paquets de 90 minutes
+(révision 970232) ; Le pendulage (révision 970233) ; La méthode Nerac (révision 914537) ;
+QQOQCCP (révision 970234) ; Le principe de Pareto (révision 967014) ; L'analyse ABC
+(révision 984471) ; La grille d'auto analyse du temps (révision 914556) ; Outils de gestion du
+temps (révision 969776).
+Modifications : boîtes de navigation, images et liens retirés ; chapitres mis dans l’ordre de la
+leçon. Ce document sert d’exemple d’entrée au service Acquimètre (READ FRANCE SAS) ; il
+est diffusé sous la même licence CC BY-SA 4.0.
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 1/22
+--- p. 2
+Chapitre 1. Historique
+Histoire de la gestion du temps
+La gestion du temps a toujours existé, l’homme a toujours cherché à comprendre le temps,
+le mesurer et le maîtriser. Déjà à l’époque de la civilisation mégalithique, il existait une
+représentation de repères temporels qui s’illustraient par les alignements de Carnac, ou
+encore les cercles de Stonehenge (en Grande-Bretagne) qui représentaient alors des repères
+astronomiques. Rappelons-nous également des premiers calendriers égyptiens et
+babyloniens qui utilisaient la notion de saison (on parle alors de cycle) en tant que repère.
+Ces premiers éléments étaient déjà des témoignages de la prise en compte de la
+problématique de la gestion du temps des anciennes civilisation. Plus récemment sont
+apparus les clepsydres, cadrans solaires, sabliers, horloges puis les montres, les réveils, les
+chronomètres, les minuteurs.
+Le Temps et l’Art ou l’Art du Temps
+De nombreux artistes ont été inspirés par ce paradoxe qu'est le temps. La notion du temps a
+ainsi été revisitée et illustrée au sein même de l’art. Il est possible de citer les « Montres
+molles » de Salvador Dali, qui représentait alors la perplexité devant un temps qui est
+devenu presque insaisissable, ingérable et surtout non renouvelable. La mythique Pénélope
+du peintre Bassano représente aussi l’envie de gérer le temps et de le repousser.
+Le temps dans les théories du travail
+C’est à partir de la naissance du Taylorisme (ouvrage de 1911 « La direction scientifique des
+entreprises » par Frederick Winslow Taylor) qu’est apparue une des premières théories
+d’organisation du travail sur laquelle reposait le souci de la gestion du temps. Le point de
+départ qu’évoque Taylor est issu de la constatation de la « flânerie » des ouvriers sur leur
+temps de travail. Ces fondements de la gestion et du contrôle du temps de travail ont été
+repris notamment dans le Fordisme. Ainsi, déjà la gestion du temps de travail était l'un des
+piliers de l’organisation efficace de l’entreprise et une garantie de sa survie et de son bon
+fonctionnement. L’environnement social a été également fortement affecté par la notion de
+gestion du temps : le temps de travail s’est considérablement réduit depuis quelques
+dizaines d'années avec l’apparition de la retraite, des congés payés, des temps partiels et
+également les différentes lois régissant le temps de travail (35 h par exemple); son
+optimisation est donc devenue primordiale pour l’entreprise.
+La gestion du temps en période de crise
+Suite aux crises financières successives, les organisations doivent être attentives et capable
+de s’adapter rapidement aux changements pour ne pas subir les fluctuations des marchés.
+Cela demande des ajustements continuels mais nécessaires à la sauvegarde des entreprises
+et donc des emplois. L’ensemble des entreprises doit se préoccuper davantage de la qualité
+des processus réalisés au sein de leur organisation. Il est donc essentiel d’aborder des sujets
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 2/22
+--- p. 3
+sur l'optimisation de la performance, dans ce contexte, la gestion du temps est une variable
+incontournable. Effectivement, il est indispensable d'évaluer, hiérarchiser et organiser ses
+différentes tâches et missions pour mener à bien des projets, tout en utilisant le moins de
+ressources possibles.
+La gestion du temps implique de multiples facettes de la qualité globale puisque c’est à
+partir d'une parfaite connaissance de ses missions qu'un acteur pourra jouer sur la
+performance de ses actions.
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 3/22
+--- p. 4
+Chapitre 2. Objectifs et organisation de la gestion du
+temps
+La plupart des objectifs et actions publics ou privés sont subordonnés au respect
+d'échéances. Chaque division d'une entreprise doit ordonnancer son travail en fonction de
+contraintes de temps externes et internes.
+Pourquoi gérer son temps ?
+Alors que le contexte environnemental de chaque entreprise a été fortement modifié depuis
+plusieurs années (nouvelles concurrences, nouvelles technologies, mondialisation, contexte
+économique difficile), il apparaît aujourd’hui que le temps est devenu une variable
+stratégique pour les entreprises. En effet la mondialisation, et la financiarisation de
+l’économie, la saturation de nombreux marchés solvables et la volatilité de la demande ont
+eu pour conséquence immédiate d’intensifier la concurrence entre les entreprises et en
+répercussion d’accroître les exigences des clients. La plupart des pertes subies par les
+entreprises et par les organisations sont dues à un manque de gestion du temps. Le temps
+est donc une ressource rare et non renouvelable. Avec l’entreprise, l’expression « le temps,
+c’est de l’argent » prend alors toute son importance. Le temps doit donc être géré, contrôlé,
+planifié. L’entreprise doit donc faire des choix : ce qu’il y a à faire, ce qui a été fait, ce qui
+reste à faire et comment cela va-t-il être fait ? La gestion du temps devient alors un enjeu
+stratégique, à la fois car il peut se révéler être un avantage concurrentiel afin de se
+démarquer de ses compétiteurs et également une source d’optimisation de la
+performance de l’entreprise via son organisation.
+La gestion de temps vue comme une nécessité interne
+Le temps de travail est fixé par des lois ou des conventions, en général par le pays ou se
+déroule le travail. Lorsque le temps de travail diminue (ex. les 35H en France), les
+entreprises doivent :
+soit produire moins en se calant sur les nouvelles heures de travail disponibles, ce qui
+n'entraine pas de changement dans l'organisation du travail
+soit produire autant (voire plus) avec moins d’heures de travail disponibles, et dans ce
+cas, il devient primordial de gérer plus finement ce temps de travail et de compenser
+la perte de production :
+par d’éventuelles embauches
+par des heures complémentaires
+par des progrès de productivité
+La gestion du temps vue comme une nécessité externe
+Les entreprises intègrent maintenant la notion de temps dans leurs prestations de services.
+Elles proposent à leurs clients des services « gains de temps », « accélérés » ...
+Le temps devenant un critère de choix du consommateur, les offres de services parlent
+maintenant de dépannage 7/7, ouvert 24/24 ... Le critère temps peut aussi être intégré dans
+certains tarifs tels que voyages, hôtels, délais de livraisons etc.
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 4/22
+--- p. 5
+En 1954, seulement 2 noms de marques contenant le mot « chrono » étaient répertoriées et
+déposées. Aujourd’hui, il existe plus de 1800 noms de marques contenant les mots
+« chrono » ou « rapide » ou « vite ».
+Les causes de pertes de temps
+On identifie plusieurs facteurs qui contribuent à faire perdre du temps au sein d’une
+entreprise. On peut distinguer des conditions :
+Economiques : comme les conditions de travail
+Matérielles: les outils de travail la qualité du cadre de travail
+Socioculturelle et psychologiques : la communication
+Les facteurs de pertes de temps sont aussi : les réunions trop longues et trop fréquentes en
+entreprise, qui ne démarrent pas à l’heure, les visites intempestives, les interruptions
+incontrôlées des collaborateurs et des supérieurs, la recherche d’information rendue souvent
+difficile en entreprise. On peut parler de la procrastination, il s’agit du fait de tout remettre
+au lendemain, ceci est identifié comme une non-gérance et donc une perte de temps.
+D’autres pertes de temps sont inhérentes à l’organisation même de l’entreprise : il s’agit
+donc finalement d’un manque d’organisation auquel l’entreprise doit pallier en se fixant des
+objectifs et en mettant en place des outils de priorisation.
+Comment gagner du temps ?
+Gérer une entreprise n’est pas une chose facile, le temps de travail est de plus en plus court,
+son management devient important. Alors comment une entreprise peut-elle gagner du
+temps ? Savoir gérer son temps c’est finalement savoir s’organiser : organiser son
+personnel, les informations et les ressources matérielles dont on dispose. Les nouveaux
+outils technologiques mis à disposition confèrent la possibilité de gérer son temps et d’en
+gagner, permettant à chacun de s’organiser et de communiquer grâce notamment aux
+calendriers partagés, smartphones, outlook...
+Les maîtres mots des gains de temps sont finalement l’organisation et la communication :
+choisir les bons outils (agenda, messagerie, échéancier...), les bonnes méthodes de
+priorisation des tâches (Pendulage, NERAC ...) et communiquer au sein de l’entreprise.
+La gestion du temps lors des réunions
+La répartition du temps est essentiel lors des réunions, des séminaires, des entretiens, des
+assemblées, etc. En effet, cette méthode permet de gérer et de dispatcher le temps de
+parole sur les différents thèmes à aborder lors de ces regroupements. Ceci dans le but de
+pouvoir développer tous les points cités lors de la présentation du sommaire en avant-garde.
+De plus, cette forme de gestion du temps aide les intervenants lors de leur passage oral à
+respecter le plan qu’ils ont précédemment établis, afin d’évoquer au plus juste les idées
+principales qu’ils souhaitaient exposer.
+Pour vous aidez, voici un lien utile : Importance de l'orateur et maîtrise de sa présentation
+orale.
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 5/22
+--- p. 6
+Objectifs et organisation de la gestion du temps
+Gérer son temps c’est savoir identifier au sein d’une entreprise les coûts cachés, les coûts
+d’opportunité et plus précisément les coûts liés aux pertes de temps. L’objectif de
+l’entreprise est ensuite de savoir gérer ses pertes de temps. Pour cela, l’entreprise doit
+nécessairement s’organiser afin de gérer son processus d’activité correctement et résoudre
+les problèmes. On peut ainsi faire le lien avec la gestion de projet. Pour son bon
+déroulement, sa bonne organisation il faut obligatoirement passer par un certain nombre
+d’étapes successives garanties de son succès final.
+Fixation des objectifs et des enjeux : il s’agit donc alors de déterminer la durée d’une
+tâche, d’un projet, et son délai de réalisation
+Une phase de planification et d’organisation : l’entreprise, le salarié doit préparer son
+travail, se fixer des contraintes d’horaires
+Le moment de la prise de décision : il s’agit de classer les tâches selon leur
+importance, c'est-à-dire la priorisation; choix des problèmes essentiels à traiter. Il est
+possible pour cela d’appliquer la méthode de Pareto ou encore la méthode ABC.
+Contrôle du déroulement du travail et de l’activité : il s’agit donc de mettre en place un
+système de contrôle et de vérification des résultats accomplis, et de réaliser des
+comparaisons entre le travail réalisé et ce qui avait été prévu lors de la phase de
+planification et de fixation des objectifs.
+Annexes
+Liens externes
+Gestion du temps (CERPEG AC VERSAILLES)
+Liens internes
+QQOQCCP
+Le principe de PARETO
+Le diagramme de GANTT
+Le diagramme de PERT
+Le logiciel Outlook
+Publications
+2006 Temps et Sciences de Gestion, second edition, Laurent Batsch.
+2007 Gérer son temps et ses priorités, Groupe Eyrolles, Gérard Rodach.
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 6/22
+--- p. 7
+Chapitre 3. Méthode des paquets de 90 minutes
+Méthode des paquets de 90 minutes
+La méthode des paquets de 90 minutes est définie par ce constat : les adultes instruits ne
+peuvent être efficients que par cycles de 90 minutes. Chaque cycle comprend
+l'échauffement intellectuel, les orientations de pensée, la réception, l'analyse et
+l'organisation des données, la recherche de solution, des plans d'actions alternatifs,
+éventuellement une décision, une synthèse et une stratégie de communication.
+Méthode
+Définition
+Cette méthode des paquets de 90 minutes sert surtout à planifier les activités
+considérées à "haut rendement" mais uniquement sur des cycles de 90 minutes.
+Elle est applicable pour des évènements tels que réunions de comité de direction ou
+congrès, évènements durant lesquels la charge d'informations est si dense qu’il
+convient de faire des pauses toutes les 90 minutes et idéalement de choisir un sujet
+différent par paquet de 90 minutes.
+Exemple de situations où appliquer cette méthode
+Exemple
+préparation d'une réunion ou d'un séminaire,
+analyse d'indicateurs financiers ou d'indicateurs qualité,
+négociations syndicales/salariales,
+élaboration d'un budget,
+résolution de problèmes techniques,
+résolution de problèmes relationnels,
+...
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 7/22
+--- p. 8
+Chapitre 4. Le pendulage
+Le pendulage
+Méthode
+Définition
+La méthode du pendulage est une technique qui mesure le temps alloué à
+chaque tâche. Cette méthode permet de quantifier la moyenne de temps nécessaire
+à l’exécution de tâches administratives et répétitives.
+Afin d'y arriver, l’on demande à une personne expérimentée d'exécuter, à allure
+normale, une série de tâches de même nature.
+En divisant le temps global par le nombre de tâches à effectuer on obtient le temps
+moyen d'exécution d'une tâche.
+Le pendulage est utilisé surtout pour fixer des normes de travail et d'organiser ce
+travail. Il sert principalement aux responsables d'équipes pour l’organisation des
+différents postes de travail au sein de leur service. Ils peuvent ainsi évaluer le temps
+d’exécution des tâches, tâche par tâche. Cela leur permet de mieux planifier le
+temps de travail de leur service, de mieux affecter les ressources à une activité
+et à déterminer si des ressources ou moyens supplémentaires sont nécessaires.
+Temps d'exécution moyen d'une tâche est égal au temps global divisé par le nombre
+de tâches.
+Exemple de pendulage
+Exemple
+Un service de gestion de contrat de maintenance dispose d'une seule assistante de
+gestion expérimentée pour l'enregistrement de nouveaux contrats. Celle-ci est
+disponible 330 minutes par jour pour cette tâche, une étude sur plusieurs journées
+montre qu'elle enregistre en moyenne 55 contrats par jour.
+Données :
+Temps d'exécution pour enregistrer un contrat : 6 minutes
+Le responsable a fixé un objectif global de 66 contrats par jour, ce qui entraine
+Soit une augmentation de temps de travail de 66 minutes
+Soit une embauche de ressource complémentaire
+Soit une amélioration de productivité grâce à une meilleure préparation
+des dossiers en amont ou une transformation de l'outil de saisie qui
+permettraient de réduire le temps de saisie à 5 minutes.
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 8/22
+--- p. 9
+Ces simples informations résultant de la méthode du pendulage lui permettent de
+prévoir et éventuellement d'atteindre l'objectif souhaité.
+D'autres exemples de tâches chronométrables peuvent être cités comme :
+Saisie de variables
+L'édition d'une lettre
+La mise sous enveloppe des lettres
+Saisie des commandes
+En revanche, la méthode de pendulage n’est pas adaptée à des activités
+intellectuelles (on utilisera la méthode dites d'estimation).
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 9/22
+--- p. 10
+Chapitre 5. La méthode Nerac
+La Méthode Nerac
+Cette méthode d'organisation du travail permet de gagner en efficacité dans la gestion de
+son temps. Signifie Noter, Estimer, Réserver, Arbitrer, Contrôler
+Méthode
+Définition
+Cet outil de gestion du temps permet entre autres de Noter dans la colonne activité
+d'un tableau les tâches à accomplir sans s'occuper de l’ordre chronologique ni de leur
+durée. Ensuite, on Estime pour chacun de ces évènements un temps approximatif de
+leur durée d’exécution dans la colonne durée prévue. Puis, on Réserve, on émet un
+doute sur ce temps qui sera destiné aux imprévus qui pourraient survenir, ainsi qu’un
+laps de temps de réajustement afin d’analyser ces imprévus. De plus, on Arbitre en
+nommant les évènements prioritaires. Autrement dit, pour chaque tâche on définira
+le degré d'importance et/ou d'urgence. Enfin on nomme un responsable qui se
+chargera de Contrôler les durées choisies, l'atteinte des objectifs, l'analyse des
+écarts ou encore les prévisions.
+Exemple de mise à jour d’un tableau de bord
+Exemple
+Pour la mise à jour d’un tableau de bord (Notifier l’évènement), on estime le temps
+de réalisation à deux heures (Estimer). Cependant, on se réserve 40 % de temps en
+plus, pour survenir aux éventuels imprévus (Réserver), c'est-à-dire 2 heures
+auxquelles on ajoute 48 minutes (2 × 1,40), ce qui revient à 2 heures et 48 minutes.
+Ensuite, on évalue (Arbitrer) si l’événement (mettre à jour le tableau de bord) est
+plus ou moins prioritaire comme tâche. Et enfin, on désigne un responsable du
+tableau de bord qui contrôle le temps réel de mise à jour du tableau de bord, qui est
+à ce jour fixé à 2 heures et 15 minutes.
+Activité Durée Ajustement Important Urgent Quand Contrôle Commentaire
+MàJ TdB2h2h 48 mins Oui OuiJ+1 Bernard2h 15 mins
+Références
+1. ↑ Manager une équipe, par Raphaëlle Delaunay et Jean-Marc Moret
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 10/22
+--- p. 11
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 11/22
+--- p. 12
+Chapitre 6. QQOQCCP
+QQOQCCP
+QQOQCCP signifie Qui, Quoi, Où, Quand, Comment, Combien, Pourquoi.
+Méthode
+Définition
+Cette méthode empirique permet une collecte exhaustive et rigoureuse de données
+précises. L’objectif étant d’aider à l’appréhension des divers aspects d’un problème,
+d'une situation ou d'un processus. Son mode d’utilisation est de décrire une situation
+par ses éléments caractéristiques en répondant systématiquement et complètement
+aux questions dans cet ordre.
+Dans le cas, où il s’avère difficile de répondre aux questions, il faut faire le
+cheminement inverse, c'est-à-dire « CQQCOQP ne pas », comme par exemple :
+Qui n’est pas concerné ?
+Que ne s’est-il pas passé ?
+Quels sont les éléments qui n’ont pas évolué ?
+Etc.
+Cette méthode est généralement employée dans la résolution de problèmes, dans la
+définition d’un projet, ou encore dans la rédaction d’une procédure.
+Exemple de CQQCOQCP
+Exemple
+Qui : qui doit se charger des analyses ? Quels sont les responsables de ce
+projet ?
+Quoi : quelle est la tâche / la fonction concernée ? S’agit-il d’un produit ? D’un
+service ? Y a-t-il un processus distinct concerné ?
+Où : cela concerne-t-il un service en particulier ? L’entreprise ? Quelle est la
+zone géographique ?
+Quand : quand commence le projet/ l’analyse ? Quel est le planning ? Quel en
+est la durée ? Quand prend fin le projet ?
+Comment : quelles sont les procédures à suivre ? Quelle est la démarche à
+élaborer ?
+Combien : quel est le coût de cette analyse ? Combien de gains cela va nous
+rapporter ? Quel est le budget dont nous disposons ?
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 12/22
+--- p. 13
+Pourquoi : pourquoi avons-nous besoin de déterminer des normes ? Quels sont
+les objectifs ?
+Il convient ensuite de présenter un slide par question avec des réponses.
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 13/22
+--- p. 14
+Chapitre 7. Le principe de Pareto
+Le principe de Pareto
+Méthode
+Définition
+Le diagramme de Pareto est un histogramme qui reprend l’ensemble des données
+des plus pertinentes liées à un même projet et les classer par ordre d’importance.
+Pour la gestion du temps, cet outil permet de définir les tâches / les opérations par
+priorité d’exécution sur une période donnée. Selon cette loi, l'essentiel prend 20 % du
+temps et l'accessoire occupe 80 % du temps restant.
+Néanmoins, selon des critères de qualification des données et de l’objectif visé, le
+diagramme obtenu sera plus ou moins différent.
+Exemple
+Risques liés à la conduite d'un nouveau
+projet
+Pointage Pourcentage Pourcentage
+cumulatif
+Mauvaise gestion des coûts58935,50%35,50%
+Délais non respectés45627,49%62,99%
+Manque de communication42325,50%88,49%
+Manque de formation liée à la mise en place
+du projet
+1096,57%95,06%
+Équipe de projet peu motivée824,94%100,00%
+Total1 659100,00%
+Autre exemple
+Ci-dessous un tableau récapitulant les données d'un service qualité dans un atelier de
+fabrication.
+À partir du tableau de gauche, ranger les réparations par quantité décroissante, avec
+deux colonnes supplémentaires : le cumul et le pourcentage
+En interprétant ce tableau nous pouvons conclure que :
+les références "F,A,I" qui représentent 3 types de réparations sur 10 (soit 30%),
+représentent 80% de la totalité des réparations.
+Les autres références représentent 70% des types de réparations pour 20% des
+totalités des réparations
+Ref Type de réparation Quantité
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 14/22
+--- p. 15
+AMontage poignet3639
+BCouture de la boutonnière666
+CDéfaut tissu132
+DBouton389
+EOurlet313
+FMontage col4583
+GSurpicage col846
+HEmpiècement152
+IPlacage poche2168
+JAutre réparation67
+Ref Type de réparation Quantité Cumul%
+FMontage col4583458335%
+AMontage poignet3639822263%
+IPlacage poche21681039080%
+GSurpicage col8461123687%
+BCouture de la boutonnière6661190292%
+DBouton3891229195%
+EOurlet3131260497%
+HEmpiècement1521275698%
+CDéfaut tissu1321288899%
+JAutre réparation6712955100%
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 15/22
+--- p. 16
+Chapitre 8. L'analyse ABC
+L’analyse ABC
+Méthode
+L’analyse ABC s’apparente beaucoup à la méthode de Pareto et tout comme elle, identifie le
+ratio de 80/20 parmi un ensemble de référentiels de produits donnés.
+En complément de la méthode de Pareto, l’analyse ABC catégorise les produits en trois
+classes :
+⇒ Classe A : très importants
+⇒ Classe B : importants
+⇒ Classe C : moins importants ou non importants
+"Classe A" : les produits de la classe A constituent en générale 80% de la valeur totale
+du stock et 20 % de la quantité totale des produits (ou articles ou références...) (soit la
+règle des 80/20 de Pareto)
+"Classe B" : les produits de la classe B constituent en générale 15% de la valeur totale
+du stock et 30 % de la quantité totale des produits.
+"Classe C" : les produits de la classe C constituent en générale 5% de la valeur totale
+du stock et 50 % de la quantité totale des produits.
+Principe
+Le principe de catégoriser par classes permet :
+D’identifier les produits qui nécessiteront une gestion particulière dû à leur
+importance.
+D’identifier les articles qui ont un impact important sur une valeur globale (de
+stock, de vente, de coût...).
+D’organiser la logistique d’un entrepôt par exemple, de manière à ce que les
+articles ou produits qui tournent le plus, soient stockés près du quai de
+chargement (gain de temps)
+et à l’inverse, elle permet d’identifier les articles qui ne tournent pas, les stocks
+morts (frais de stockage, encombrement, etc.)
+Exemple d'analyse ABC applicable sur les flux dans le temps
+Exemple
+Sur les délais d’approvisionnement ;
+Sur le temps de fabrication d’un produit ;
+Sur le temps de passage en atelier ;
+Sur les heures travaillées ;
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 16/22
+--- p. 17
+Sur les heures de circulation des véhicules.
+Exemple d'analyse ABC applicable sur les fréquences
+Exemple
+Sur des produits faisant l’objet de commandes fréquentes ;
+Sur les véhicules les plus utilisés ;
+Sur le nombre de pannes sur une période donnée afin de définir et organiser le
+planning de maintenance ;
+Sur les livraisons et leur fréquence permettant de les regrouper et
+éventuellement de réduire les cadences de transport.
+Voir aussi
+AMDEC
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 17/22
+--- p. 18
+Chapitre 9. La grille d'auto analyse du temps
+La grille d’auto analyse du temps
+La grille d’auto analyse du temps a été conçue par Henri Savall et l’équipe de l'ISEOR dans le
+cadre de la méthode de management Socio-économique. C’est un mode de gestion qui allie
+les problématiques économiques et sociales dans toutes les dimensions de l’entreprise. Le
+postulat principal porte le capital humain comme vecteur principal de la performance
+économique. Pour corréler la dimension financière et les ressources Humaines, l’ISEOR
+propose de nombreux outils. La grille d’auto analyse du temps est un des outils du panel qui
+permet d’optimiser la gestion du temps dans l’objectif de rendre les process d’une entreprise
+plus efficace.
+Méthode
+Définition
+Sur le même principe que la méthode Nerac, il s’agit de confronter le temps estimé
+au temps réel pour faire ressortir les surplus de temps et les imprévus. Ainsi, il est
+possible de localiser les dysfonctionnements et de faire une première régulation pour
+optimiser la gestion du temps et diminuer les coûts cachés.
+Ensuite, l’objectif est de regrouper des activités communes pour favoriser les
+synergies. Les points communs peuvent être dans la méthode d’exécution, le process
+ou encore l’analyse et l’interprétation des résultats.
+Exemple d'auto-analyse du temps
+Exemple
+Pour la première étape, consistant à estimer, noter et analyser les écarts de temps, il
+convient de se référer au chapitre 5 sur la méthode Nerac, du cours de la gestion
+professionnelle du temps.
+L’intérêt de cette méthode se situe dans la deuxième partie du travail. Pour bien
+comprendre l’utilité du regroupement de « tâche » nous pouvons prendre l’exemple
+d’une action simple et commune à de nombreux métiers : la consultations des e-
+mails. La consultation quotidienne des e-mails est intrusive puisqu’elle s’effectue
+pour la plupart des personnes dès lors que le courrier arrive dans la boite de
+réception. Nous pensons à tort, que ceux-ci n’occupent pas une place importante
+dans la gestion de notre temps. Pourtant, la lecture et parfois la réponse, stoppent la
+concentration dans une tâche particulière et lorsque la réponse n’est pas formulée
+immédiatement, la personne devra lire une deuxième fois l’e-mail. Selon l’intensité
+du travail, il est convenable de réserver des plages horaires à la lecture et à la
+rédaction des réponses. Par exemple, la personne réserve une plage horaire « E-
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 18/22
+--- p. 19
+Mail » tous les Lundis matin ou 1 heure tous les jours le matin en arrivant ou après le
+déjeuner. Dans tous les cas, ces périodes doivent être concentrées sur le sujet
+particulier.
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 19/22
+--- p. 20
+Chapitre 10. Outils de gestion du temps
+Les méthodes restent néanmoins parfois très théoriques. Cependant il existe aussi des outils
+pratiques pour apprendre et permettre à l'entreprise de mieux gérer son temps :
+Calendrier partagé
+Qu’est-ce qu’un calendrier ou agenda partagé (shared calendar) ?
+C’est un outil informatique, qui se présente sous forme de calendrier électronique mis en
+réseau dans une même entreprise. Il consiste principalement à rassembler les agendas de
+plusieurs personnes sur un seul et même agenda et ce, en temps réel. Il permet :
+d’afficher les activités de plusieurs personnes, (rendez-vous, réunions, vacances, etc.)
+de connaître les disponibilités de chacun et ainsi faciliter sa propre organisation
+de simplifier l’organisation d’évènements de groupe tels que réunions, séminaires,
+formations etc. en envoyant des convocations à chacun avec bouton de réponse
+immédiate.
+de gagner du temps sur les échanges de mails, appels téléphoniques, recherche de
+dates...
+pour un dirigeant, d’avoir une vision globale des activités des salariés de son
+entreprise.
+de planifier automatiquement les évènements récurrents
+de réserver une salle de réunion pour un évènement prévu au planning
+Le calendrier partagé est un outil très efficace s’il est correctement renseigné par tous. Il
+peut permettre un gain de productivité considérable ainsi qu’une économie et une gestion
+du temps de travail profitables à l’entreprise. C’est un outil très simple et nul besoin de
+formation spécifique quant à son utilisation.
+Exemples d'agenda partagés
+Exemple
+Voici quelques exemples de calendriers partagés.
+Logiciel Outlook
+Ce logiciel permet de fixer des rendez vous et des réunions avec un rappel s'affichant
+sur votre bureau. Pour plus d'explications, cliquez sur le lien suivant : Microsoft
+Outlook.
+Attention, il existe plusieurs versions Outlook et ainsi que plusieurs systèmes
+d'exploitation de votre ordinateur.
+Intra Tools
+Teamsoft
+Workgroup Share
+Share Calendar
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 20/22
+--- p. 21
+OBM-Group Ware
+Rendez Vous Facile (spécialisé dans le secteur de la santé)
+Doodle : Permet de "voter" pour choisir une date de réunion
+Google Agenda for Business
+Le système des pointeuses
+Il intervient aussi dans la gestion du temps avec soit des pointeuses pour horaires fixes
+(dans ce cas les machines à pointer ne servent qu’à vérifier la ponctualité des employés),
+soit des pointeuses pour horaires variables (dans ce cas celles-ci proposent aux employés
+différents choix permettant de les guider dans la maîtrise de leurs horaires sur leur lieu de
+travail). L’organisation peut, par ce biais, piloter ses ressources humaines et veiller à ce que
+le temps de travail soit quantitativement effectué par chaque salarié tout en restant
+maitresse des plages horaires fixes et variables.
+Dans certaines entreprises, les pointeuses (ou "badgeuses") servent aussi à afficher des
+messages (communication interne), à rappeler aux employés les règles de sécurité,
+d’hygiène, de qualité, etc (procédures). Ceci grâce soit à un écran affichant les informations
+en boucle, soit à un signal sonore particulier et reconnaissable par tous.
+Diagramme de Gantt
+Principe
+Le diagramme de Gantt est un standard en matière de présentation d’un planning. L’intérêt
+principal de cet outil réside dans sa simplicité d’élaboration, de présentation et de
+compréhension. Le diagramme de Gantt est un outil de gestion de projet (et donc de temps)
+caractérisé par un tableau à 2 dimensions (on peut d'ailleurs rencontrer une pâle imitation
+manuelle du diagramme dans les tableurs). L'échelle des temps est représentée en
+abscisses et l'échelle des tâches en ordonnées. Ce diagramme modélise la planification et
+l’avancement des opérations qui sont bénéfiques à la réalisation d’un projet. De plus, il s’agit
+d’un moyen de communication entre les divers intervenants du même projet.
+Un diagramme de Gantt représente en abscisse la durée de chaque tâche par une ligne ou
+une barre horizontale dont les extrémités déterminent les dates de début et de fin de
+réalisation. Alors que les colonnes représentent des jours, des semaines ou des mois
+calendaires. Les opérations peuvent s’enchaîner de manière séquencée et/ou de manière
+parallèle.
+Pour avoir une vue globale sur l’avancement du projet et de ses tâches, on remplie au fur et
+à mesure de l’accomplissement de ces dernières, les barres qui leurs correspondent. En
+outre, lorsque l’on trace une ligne verticale à la date du jour, on observe que les tâches qui
+sont situées à gauche de cette ligne sont dites passées tandis qu’à droite se situent les
+tâches prévues. Si la ligne vient à traverser des tâches, c’est que ces dernières sont en cours
+de réalisation.
+Exemple de diagramme de Gantt
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 21/22
+--- p. 22
+Diagramme de PERT
+Principe
+PERT signifie Program and Evaluation Review Technique, dont la traduction en français est
+« Technique d’élaboration et de contrôle des projets ».
+Cet outil est synonyme de gestion de projets importants sur le long terme. Ce dernier permet
+de mettre en évidence le chemin critique des tâches et/ou des opérations qui définissent un
+projet afin de limiter la durée de réalisation de celui-ci.
+Pour cela, on doit définir le projet en lui-même, les opérations qui le constituent, la durée de
+ces opérations et les liens qu’elles peuvent posséder entre elles.
+Ensuite il faut dessiner le graphe de PERT et en déterminer le chemin critique.
+Exemple d'un diagramme de PERT
+Mind Mapping
+Toutes les techniques d'optimisation et d'organisation du temps personnel passent par des
+listes écrites de tâches à effectuer. Le mind mapping enrichit cette utilisation de listes en
+liant graphiquement les idées et tâches entre elles, à travers un outil performant permettant
+au cerveau de comprendre directement les liens entre les différentes actions à
+entreprendre : la carte heuristique.
+De nombreux logiciels ont remplacé avantageusement les cartes ébauchées sur feuille de
+papier par des cartes informatiques gérant dynamiquement et graphiquement les liaisons
+entre les tâches. Parmi lesquels :
+Free Mind
+Freeplane
+Mymap
+The Brain
+Exemple d'un logiciel de Mind Mapping Freemind
+Vidéo explicative
+Dans cette vidéo, Vous verrez qu’il suffit d’avoir de bons outils et de suivre des étapes très
+simples pour gérer plus efficacement son temps. Elle date du 15 novembre 2011 :
+Lien vidéo : Outils de gestion du temps
+Gestion professionnelle du temps – Wikiversité, CC BY-SA 4.0 – page 22/22
