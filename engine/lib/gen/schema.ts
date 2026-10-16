@@ -3,7 +3,7 @@
 // Octave adds the course header (objectives, prerequisites) and three instruments (Qualiopi 8 and 11).
 import { z } from "zod";
 
-import { buildWordSet, normalizeAnswerForPresence } from "../ai/answer-presence";
+import { buildWordSet, normalizeAnswerForPresence } from "@read-france/reading-engine";
 
 export const GeneratedQuestionSchema = z.object({
   objective: z.number().int().min(1),

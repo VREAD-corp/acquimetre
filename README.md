@@ -26,7 +26,9 @@ A READ FRANCE SAS service (venture V4-01 of `octave-asset-ventures`).
    # in this repo: input/ layout = what pull writes (order.json + Cxx/), see samples/gestion-temps/input
    npx tsx engine/cli.ts extract /path/orders/ok_…                 # work/Cxx/extract.txt to read
    #   write work/Cxx/draft.json (objectives + 3 instruments, each question with its verbatim source quote)
-   npx tsx engine/cli.ts check  /path/orders/ok_…                  # acquiz static gates; any failure stops
+   npx tsx engine/cli.ts cold   /path/orders/ok_…                  # cold-answer prompts (course title + question only)
+   #   an agent that has NOT seen the course answers work/Cxx/cold.answers.jsonl; then `judge` for the MC answers
+   npx tsx engine/cli.ts check  /path/orders/ok_…                  # reading-engine gates; any failure stops
    npx tsx engine/cli.ts render /path/orders/ok_…                  # DOCX + PDF + CSV + evidence file -> ZIP
    node gas/scripts/eval-ops.mjs deliver ok_… /path/orders/ok_…/output/….zip "summary"
    ```
@@ -35,8 +37,11 @@ A READ FRANCE SAS service (venture V4-01 of `octave-asset-ventures`).
 
 ## Engine (`engine/`)
 
-- Text extraction and gates come from the in-house parts of `VREAD-corp/acquiz` (`engine/lib/`: PDF/DOCX parsing,
-  segmenter, answer presence, quote check, duplicates, item rules), all written by Octave for READ FRANCE SAS.
+- Text extraction and gates come from **READ FRANCE's reading engine** (`@read-france/reading-engine`,
+  VREAD-corp/vread-reading-engine, a git dependency pinned to a commit): the in-house parsers, segmenter and QA gates
+  of vread-workflow-def (pre-Octave snapshot `a5df9a9`), including the **cold-answer gate** now run on every draft
+  (`engine/qa.ts`; steps `cold` and `judge`, see [qa/README.md](qa/README.md)). It replaced, on 2026-10-16, the copy
+  vendored from `VREAD-corp/acquiz`. Item rules (`engine/lib/gen/schema.ts`) and PPTX extraction stay local.
   **The acquiz PDF writer (`src/lib/pdf/`) is not used.** PPTX extraction is new (`engine/lib/parse/pptx.ts`).
 - Documents go through the Kit Qualiopi chain: Markdown → DOCX (`engine/md2docx.mjs`, from
   `qualiopi-kit-content/scripts/md2docx.mjs`) → PDF (LibreOffice headless).

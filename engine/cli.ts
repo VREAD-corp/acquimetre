@@ -1,5 +1,9 @@
 // Acquimètre offline fulfilment. Usage (from the repo root):
 //   npx tsx engine/cli.ts extract <orderDir>   course files (input/order.json + input/Cxx/*) -> work/Cxx/extract.{json,txt}
+//   npx tsx engine/cli.ts cold    <orderDir>   work/Cxx/draft.json -> work/Cxx/cold.prompts.jsonl (cold-answer gate, to answer
+//                                              offline WITHOUT the course into work/Cxx/cold.answers.jsonl)
+//   npx tsx engine/cli.ts judge   <orderDir>   cold answers of MC items -> work/Cxx/cold.judge-prompts.jsonl (judged
+//                                              offline against the key into work/Cxx/cold.judge.jsonl)
 //   npx tsx engine/cli.ts check   <orderDir>   work/Cxx/draft.json (written offline by Octave) -> gates -> work/Cxx/check.json
 //   npx tsx engine/cli.ts render  <orderDir>   checked drafts -> output/<zip> (DOCX, PDF, CSV, evidence file)
 //   npx tsx engine/cli.ts all     <orderDir>   the three steps (extract, check, render)
@@ -7,13 +11,13 @@
 import { existsSync } from "node:fs";
 import { join, resolve } from "node:path";
 
-import { checkCourse } from "./check";
+import { checkCourse, coldPrompts, judgePrompts, stampCold } from "./check";
 import { courseId, extractOrder, readOrder } from "./extract";
 import { renderOrder } from "./render";
 
 const [cmd, dirArg] = process.argv.slice(2);
 if (!cmd || !dirArg) {
-  console.error("usage: cli.ts extract|check|render|all <orderDir>");
+  console.error("usage: cli.ts extract|cold|judge|check|render|all <orderDir>");
   process.exit(2);
 }
 const dir = resolve(dirArg);
@@ -23,6 +27,18 @@ async function main() {
   if (cmd === "extract" || cmd === "all") {
     const ex = await extractOrder(dir);
     console.log(JSON.stringify({ step: "extract", courses: ex.map((c) => ({ course: c.course, title: c.title, files: c.files.map((f) => `${f.file} (${f.kind}, ${f.words} mots, ${f.places.length} emplacements)`) })) }));
+  }
+  if (cmd === "cold") {
+    for (const c of courses()) console.log(JSON.stringify({ step: "cold", course: courseId(c), ...coldPrompts(dir, c) }));
+    return;
+  }
+  if (cmd === "stamp") {
+    for (const c of courses()) stampCold(dir, c);
+    return;
+  }
+  if (cmd === "judge") {
+    for (const c of courses()) console.log(JSON.stringify({ step: "judge", course: courseId(c), ...judgePrompts(dir, c) }));
+    return;
   }
   let reports = [];
   if (cmd === "check" || cmd === "render" || cmd === "all") {

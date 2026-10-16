@@ -14,6 +14,7 @@
     "e2e": "node scripts/build.mjs && node --test tests/e2e/*.e2e.mjs"
   },
   "dependencies": {
+    "@read-france/reading-engine": "github:VREAD-corp/vread-reading-engine#4fa251d69e86b573de2deaf14025d2a16494211c",
     "docx": "9.9.0",
     "jszip": "3.10.2",
     "mammoth": "1.13.0",

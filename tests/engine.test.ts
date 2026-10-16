@@ -11,7 +11,7 @@ import JSZip from "jszip";
 import { checkCourse, locateQuote } from "../engine/check";
 import { extractOrder } from "../engine/extract";
 import { parseFile } from "../engine/lib/parse/index";
-import { quoteInText } from "../engine/lib/gen/gates";
+import { quoteInText } from "@read-france/reading-engine";
 import { itemProblems } from "../engine/lib/gen/schema";
 import { nbsp, shuffledChoices } from "../engine/render";
 
@@ -58,6 +58,7 @@ test("the public sample: 35 questions, every quote found on its page, every one-
   assert.deepEqual(r.counts, { positioning: 10, final: 15, j30: 10 });
   assert.ok(r.items.every((i) => i.gates.quoteFound && i.source && /^p\. \d+/.test(i.source.place)));
   assert.ok(r.items.filter((i) => i.type === "word").every((i) => i.gates.answerPresent === true));
+  assert.ok(r.items.every((i) => i.gates.cold === (i.instrument === "positioning" ? "exempt" : "pass")), "cold-answer gate passed (positioning exempt)");
   const nerac = r.items.find((i) => i.id === "F4")!;
   assert.deepEqual(nerac.source, { file: "C01/support-gestion-professionnelle-du-temps.pdf", place: "p. 10" });
 });
@@ -76,6 +77,22 @@ test("gates catch a made-up quote, a one-word answer absent from the passage and
   assert.ok(r.problems.some((p) => p.startsWith("F1 : ") && /citation introuvable/.test(p)), r.problems.join("\n"));
   assert.ok(r.problems.some((p) => p.startsWith("F2 : ") && /réponse absente du passage cité/.test(p)));
   assert.ok(r.problems.some((p) => p.startsWith("J2 : ") && /doublon de P1/.test(p)));
+});
+
+test("cold-answer gate: fails closed without answers, blocks a question answered without the course, ignores the entry test", () => {
+  const dir = mkdtempSync(join(tmpdir(), "acq-cold-"));
+  mkdirSync(join(dir, "work/C01"), { recursive: true });
+  for (const f of ["extract.json", "draft.json", "cold.judge.jsonl"]) cpSync(join(SAMPLE, "work/C01", f), join(dir, "work/C01", f));
+  const none = checkCourse(dir, 1);
+  assert.ok(none.problems.some((p) => /^F1 : .*porte cold-answer non passée/.test(p)));
+  assert.ok(!none.problems.some((p) => /^P\d+ : .*porte cold-answer/.test(p)), "positioning is exempt");
+  const cold = readFileSync(join(SAMPLE, "work/C01/cold.answers.jsonl"), "utf8").trim().split("\n").map((l) => JSON.parse(l));
+  const draft = JSON.parse(readFileSync(join(SAMPLE, "work/C01/draft.json"), "utf8"));
+  const word = draft.final.items.findIndex((q: { type: string }) => q.type === "word");
+  const id = `F${word + 1}`;
+  const leak = cold.map((r) => (r.id === id ? { ...r, answer: draft.final.items[word].answer.split("|")[0] } : r));
+  writeFileSync(join(dir, "work/C01/cold.answers.jsonl"), leak.map((r) => JSON.stringify(r)).join("\n") + "\n");
+  assert.ok(checkCourse(dir, 1).problems.some((p) => p.startsWith(`${id} : `) && /répondable sans lire le document/.test(p)));
 });
 
 test("options are shuffled deterministically (same order for the same order id) and the right answer is not always first", () => {

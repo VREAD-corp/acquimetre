@@ -25,7 +25,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "exempt"
    },
    "problems": []
   },
@@ -45,7 +46,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": true,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "exempt"
    },
    "problems": []
   },
@@ -71,7 +73,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "exempt"
    },
    "problems": []
   },
@@ -97,7 +100,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "exempt"
    },
    "problems": []
   },
@@ -123,7 +127,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "exempt"
    },
    "problems": []
   },
@@ -149,7 +154,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "exempt"
    },
    "problems": []
   },
@@ -169,7 +175,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": true,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "exempt"
    },
    "problems": []
   },
@@ -195,7 +202,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "exempt"
    },
    "problems": []
   },
@@ -221,7 +229,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "exempt"
    },
    "problems": []
   },
@@ -247,7 +256,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "exempt"
    },
    "problems": []
   },
@@ -273,7 +283,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
@@ -293,49 +304,50 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": true,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 1,
    "type": "mcq",
-   "question": "Le temps de travail diminue et l’entreprise veut produire autant. Quel moyen le cours ne cite-t-il PAS pour compenser la perte de production ?",
-   "answer": "Une baisse des prix de vente",
+   "question": "Le cours compte les noms de marques contenant le mot « chrono ». Combien en étaient déposés en 1954 ?",
+   "answer": "2",
    "choices": [
-    "Des embauches",
-    "Des heures complémentaires",
-    "Des progrès de productivité",
-    "Une baisse des prix de vente"
+    "2",
+    "18",
+    "240",
+    "1 800"
    ],
-   "source_quote": "par d’éventuelles embauches par des heures complémentaires par des progrès de productivité",
+   "source_quote": "En 1954, seulement 2 noms de marques contenant le mot « chrono » étaient répertoriées et déposées",
    "id": "F3",
    "instrument": "final",
    "source": {
     "file": "C01/support-gestion-professionnelle-du-temps.pdf",
-    "place": "p. 4"
+    "place": "p. 5"
    },
    "gates": {
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 2,
    "type": "mcq",
-   "question": "Vous estimez une tâche à 2 heures et appliquez la réserve de 40 % de l’exemple NERAC du cours. Quelle durée planifiez-vous ?",
-   "answer": "2 h 48",
+   "question": "Quelle tâche le cours prend-il comme exemple pour dérouler la méthode NERAC étape par étape ?",
+   "answer": "La mise à jour d’un tableau de bord",
    "choices": [
-    "2 h 08",
-    "2 h 24",
-    "2 h 40",
-    "2 h 48"
+    "La mise à jour d’un tableau de bord",
+    "La préparation d’un rapport mensuel",
+    "Le traitement des e-mails du matin",
+    "L’organisation d’une réunion d’équipe"
    ],
-   "source_quote": "on se réserve 40 % de temps en plus, pour survenir aux éventuels imprévus (Réserver), c'est-à-dire 2 heures auxquelles on ajoute 48 minutes",
-   "explanation": "2 h × 1,40 = 2,8 h, soit 2 heures et 48 minutes.",
+   "source_quote": "Pour la mise à jour d’un tableau de bord (Notifier l’évènement), on estime le temps de réalisation à deux heures (Estimer)",
    "id": "F4",
    "instrument": "final",
    "source": {
@@ -346,16 +358,17 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 2,
    "type": "word",
-   "question": "Dans la méthode NERAC, à quelle étape définit-on pour chaque tâche son degré d’importance ou d’urgence ? (un verbe)",
-   "answer": "Arbitrer|Arbitre",
-   "source_quote": "De plus, on Arbitre en nommant les évènements prioritaires. Autrement dit, pour chaque tâche on définira le degré d'importance et/ou d'urgence",
+   "question": "Selon le cours, à l’étape « Réserver » de NERAC, qu’émet-on sur le temps estimé de chaque tâche ? (un mot)",
+   "answer": "doute",
+   "source_quote": "Puis, on Réserve, on émet un doute sur ce temps qui sera destiné aux imprévus qui pourraient survenir",
    "id": "F5",
    "instrument": "final",
    "source": {
@@ -366,22 +379,23 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": true,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 2,
    "type": "mcq",
-   "question": "Lors de l’étape de contrôle du déroulement du travail, que compare-t-on ?",
-   "answer": "Le travail réalisé et ce qui avait été prévu",
+   "question": "Dans les étapes d’organisation du chapitre 2, que détermine-t-on lors de la fixation des objectifs et des enjeux ?",
+   "answer": "La durée d’une tâche ou d’un projet et son délai de réalisation",
    "choices": [
-    "Le travail réalisé et ce qui avait été prévu",
-    "Les salaires et le chiffre d’affaires",
-    "Les horaires de deux services",
-    "Les devis de plusieurs fournisseurs"
+    "La durée d’une tâche ou d’un projet et son délai de réalisation",
+    "Les indicateurs de satisfaction des clients",
+    "Le budget et les ressources humaines du projet",
+    "La liste des responsables de chaque tâche"
    ],
-   "source_quote": "réaliser des comparaisons entre le travail réalisé et ce qui avait été prévu lors de la phase de planification",
+   "source_quote": "Fixation des objectifs et des enjeux : il s’agit donc alors de déterminer la durée d’une tâche, d’un projet, et son délai de réalisation",
    "id": "F6",
    "instrument": "final",
    "source": {
@@ -392,33 +406,35 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 3,
    "type": "mcq",
-   "question": "Dans l’exemple de l’atelier de fabrication, les références F, A et I représentent 3 types de réparations sur 10. Quelle part de la totalité des réparations représentent-elles ?",
-   "answer": "80 %",
+   "question": "Dans l’exemple de l’atelier de fabrication, quel type de réparation arrive en tête du classement par quantité ?",
+   "answer": "Montage col",
    "choices": [
-    "30 %",
-    "50 %",
-    "70 %",
-    "80 %"
+    "Montage col",
+    "Montage poignet",
+    "Placage poche",
+    "Couture de la boutonnière"
    ],
-   "source_quote": "les références \"F,A,I\" qui représentent 3 types de réparations sur 10 (soit 30%), représentent 80% de la totalité des réparations",
+   "source_quote": "Ref Type de réparation Quantité Cumul% FMontage col4583458335%",
    "id": "F7",
    "instrument": "final",
    "source": {
     "file": "C01/support-gestion-professionnelle-du-temps.pdf",
-    "place": "p. 14"
+    "place": "p. 15"
    },
    "gates": {
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
@@ -444,7 +460,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
@@ -464,23 +481,23 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": true,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 4,
    "type": "mcq",
-   "question": "Une assistante dispose de 330 minutes par jour pour enregistrer des contrats et en enregistre 55. Quel est le temps moyen d’exécution d’un contrat ?",
-   "answer": "6 minutes",
+   "question": "Dans l’exemple de pendulage, quel objectif global le responsable fixe-t-il à l’assistante qui enregistre les contrats ?",
+   "answer": "66 contrats par jour",
    "choices": [
-    "5 minutes",
-    "6 minutes",
-    "7 minutes",
-    "8 minutes"
+    "55 contrats par jour",
+    "60 contrats par jour",
+    "66 contrats par jour",
+    "72 contrats par jour"
    ],
-   "source_quote": "Temps d'exécution pour enregistrer un contrat : 6 minutes",
-   "explanation": "Temps global divisé par le nombre de tâches : 330 / 55 = 6 minutes.",
+   "source_quote": "Le responsable a fixé un objectif global de 66 contrats par jour",
    "id": "F10",
    "instrument": "final",
    "source": {
@@ -491,75 +508,105 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 4,
    "type": "mcq",
-   "question": "Pour quel type d’activité le pendulage n’est-il PAS adapté ?",
-   "answer": "Les activités intellectuelles",
+   "question": "Pour tenir son objectif, le service de contrats de maintenance du cours mise sur la productivité. À quelle durée ramènerait-il la saisie d’un contrat ?",
+   "answer": "5 minutes",
    "choices": [
-    "Les activités intellectuelles",
-    "La saisie des commandes",
-    "La mise sous enveloppe des lettres",
-    "La saisie de variables"
+    "3 minutes",
+    "4 minutes",
+    "5 minutes",
+    "6 minutes"
    ],
-   "source_quote": "la méthode de pendulage n’est pas adaptée à des activités intellectuelles",
+   "source_quote": "permettraient de réduire le temps de saisie à 5 minutes",
    "id": "F11",
    "instrument": "final",
    "source": {
     "file": "C01/support-gestion-professionnelle-du-temps.pdf",
-    "place": "p. 9"
+    "place": "p. 8"
    },
    "gates": {
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 4,
    "type": "mcq",
-   "question": "Dans l’exemple de la grille d’auto-analyse du temps, que conseille le cours pour traiter les e-mails ?",
-   "answer": "Réserver des plages horaires à la lecture et à la rédaction des réponses",
+   "question": "Dans l’exemple de la grille d’auto-analyse, quand la personne réserve-t-elle sa plage horaire « E-Mail » ?",
+   "answer": "Tous les lundis matin, ou 1 heure chaque jour le matin en arrivant ou après le déjeuner",
    "choices": [
-    "Réserver des plages horaires à la lecture et à la rédaction des réponses",
-    "Répondre à chaque e-mail dès son arrivée",
-    "Désactiver la messagerie pendant la semaine",
-    "Confier la lecture des e-mails à un collègue"
+    "Tous les lundis matin, ou 1 heure chaque jour le matin en arrivant ou après le déjeuner",
+    "Deux fois par jour, à 11 h et à 16 h",
+    "Toutes les 90 minutes, entre deux paquets de travail",
+    "Le vendredi après-midi, pour solder la semaine"
    ],
-   "source_quote": "il est convenable de réserver des plages horaires à la lecture et à la rédaction des réponses",
+   "source_quote": "Mail » tous les Lundis matin ou 1 heure tous les jours le matin en arrivant ou après le déjeuner",
    "id": "F12",
    "instrument": "final",
    "source": {
     "file": "C01/support-gestion-professionnelle-du-temps.pdf",
-    "place": "p. 18"
+    "place": "p. 19"
    },
    "gates": {
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 5,
    "type": "mcq",
-   "question": "Quel outil met en évidence le chemin critique des tâches d’un projet afin d’en limiter la durée ?",
-   "answer": "Le diagramme de PERT",
+   "question": "Le cours cite un agenda partagé spécialisé dans le secteur de la santé. Quel est son nom ?",
+   "answer": "Rendez Vous Facile",
    "choices": [
-    "Le diagramme de PERT",
-    "Le calendrier partagé",
-    "La pointeuse",
-    "La carte heuristique"
+    "Rendez Vous Facile",
+    "Doodle",
+    "Teamsoft",
+    "Share Calendar"
    ],
-   "source_quote": "Ce dernier permet de mettre en évidence le chemin critique des tâches et/ou des opérations qui définissent un projet",
+   "source_quote": "Rendez Vous Facile (spécialisé dans le secteur de la santé)",
    "id": "F13",
+   "instrument": "final",
+   "source": {
+    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
+    "place": "p. 21"
+   },
+   "gates": {
+    "schema": true,
+    "quoteFound": true,
+    "answerPresent": null,
+    "duplicateOf": null,
+    "cold": "pass"
+   },
+   "problems": []
+  },
+  {
+   "objective": 5,
+   "type": "mcq",
+   "question": "Le cours cite quatre logiciels de carte heuristique : Free Mind, Freeplane, Mymap et un quatrième. Quel est-il ?",
+   "answer": "The Brain",
+   "choices": [
+    "The Brain",
+    "XMind",
+    "MindManager",
+    "Coggle"
+   ],
+   "source_quote": "Free Mind Freeplane Mymap The Brain",
+   "id": "F14",
    "instrument": "final",
    "source": {
     "file": "C01/support-gestion-professionnelle-du-temps.pdf",
@@ -569,42 +616,17 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
-   },
-   "problems": []
-  },
-  {
-   "objective": 5,
-   "type": "mcq",
-   "question": "À quelle condition le calendrier partagé est-il un outil très efficace ?",
-   "answer": "S’il est correctement renseigné par tous",
-   "choices": [
-    "S’il est correctement renseigné par tous",
-    "S’il est réservé au dirigeant",
-    "S’il est imprimé chaque semaine",
-    "S’il remplace les réunions"
-   ],
-   "source_quote": "Le calendrier partagé est un outil très efficace s’il est correctement renseigné par tous",
-   "id": "F14",
-   "instrument": "final",
-   "source": {
-    "file": "C01/support-gestion-professionnelle-du-temps.pdf",
-    "place": "p. 20"
-   },
-   "gates": {
-    "schema": true,
-    "quoteFound": true,
-    "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 5,
    "type": "word",
-   "question": "Quand il est difficile de répondre aux questions du QQOQCCP, le cours propose de faire le cheminement… (un mot)",
-   "answer": "inverse",
-   "source_quote": "il faut faire le cheminement inverse",
+   "question": "Quand il est difficile de répondre aux questions du QQOQCCP, quel sigle suivi de « ne pas » le cours propose-t-il ? (un mot)",
+   "answer": "CQQCOQP",
+   "source_quote": "il faut faire le cheminement inverse, c'est-à-dire « CQQCOQP ne pas »",
    "id": "F15",
    "instrument": "final",
    "source": {
@@ -615,22 +637,23 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": true,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 1,
    "type": "mcq",
-   "question": "Dans votre service, les réunions démarrent souvent en retard et des collègues vous interrompent sans prévenir. Comment le cours qualifie-t-il ces situations ?",
-   "answer": "Des facteurs de pertes de temps",
+   "question": "Un collègue remet tout au lendemain. En plus d’une perte de temps, comment le cours qualifie-t-il ce comportement ?",
+   "answer": "Une non-gérance",
    "choices": [
-    "Des facteurs de pertes de temps",
-    "Des coûts d’opportunité positifs",
-    "Des outils de priorisation",
-    "Des contraintes de temps externes"
+    "Une non-gérance",
+    "Un coût d’opportunité",
+    "Une contrainte de temps interne",
+    "Un défaut de communication"
    ],
-   "source_quote": "Les facteurs de pertes de temps sont aussi : les réunions trop longues et trop fréquentes en entreprise, qui ne démarrent pas à l’heure, les visites intempestives, les interruptions incontrôlées des collaborateurs",
+   "source_quote": "ceci est identifié comme une non-gérance et donc une perte de temps",
    "id": "J1",
    "instrument": "j30",
    "source": {
@@ -641,7 +664,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
@@ -667,22 +691,23 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 2,
    "type": "mcq",
-   "question": "Vous appliquez NERAC à la préparation d’un rapport. Vous venez de lister les tâches sans vous soucier de leur ordre ni de leur durée. Quelle est l’étape suivante ?",
-   "answer": "Estimer la durée de chaque tâche",
+   "question": "Dans le tableau d’exemple de la méthode NERAC, quel nom est inscrit dans la colonne « Contrôle » ?",
+   "answer": "Bernard",
    "choices": [
-    "Estimer la durée de chaque tâche",
-    "Contrôler les écarts",
-    "Arbitrer les priorités",
-    "Réserver du temps pour les imprévus"
+    "Bernard",
+    "Sophie",
+    "Julien",
+    "Nathalie"
    ],
-   "source_quote": "Ensuite, on Estime pour chacun de ces évènements un temps approximatif de leur durée d’exécution",
+   "source_quote": "Activité Durée Ajustement Important Urgent Quand Contrôle Commentaire MàJ TdB2h2h 48 mins Oui OuiJ+1 Bernard2h 15 mins",
    "id": "J3",
    "instrument": "j30",
    "source": {
@@ -693,23 +718,23 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 2,
    "type": "mcq",
-   "question": "Une tâche est estimée à 1 heure. Avec la même réserve de 40 % que dans l’exemple du cours, quel temps total prévoyez-vous ?",
-   "answer": "1 h 24",
+   "question": "Dans l’exemple NERAC du cours, à combien le temps réel de mise à jour du tableau de bord est-il fixé à ce jour ?",
+   "answer": "2 heures et 15 minutes",
    "choices": [
-    "1 h 04",
-    "1 h 14",
-    "1 h 24",
-    "1 h 40"
+    "2 heures",
+    "2 heures et 15 minutes",
+    "2 heures et 30 minutes",
+    "2 heures et 48 minutes"
    ],
-   "source_quote": "on se réserve 40 % de temps en plus, pour survenir aux éventuels imprévus",
-   "explanation": "60 minutes × 1,40 = 84 minutes, soit 1 heure et 24 minutes.",
+   "source_quote": "qui contrôle le temps réel de mise à jour du tableau de bord, qui est à ce jour fixé à 2 heures et 15 minutes",
    "id": "J4",
    "instrument": "j30",
    "source": {
@@ -720,48 +745,50 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 3,
    "type": "mcq",
-   "question": "Vous classez vos dossiers clients : 20 % d’entre eux font 80 % de la valeur. Dans quelle classe de l’analyse ABC les rangez-vous ?",
-   "answer": "Classe A",
+   "question": "Dans l’exemple Pareto des risques liés à la conduite d’un nouveau projet, quel pourcentage cumulé atteignent les trois premiers risques ?",
+   "answer": "88,49 %",
    "choices": [
-    "Classe A",
-    "Classe B",
-    "Classe C",
-    "Hors classement"
+    "62,99 %",
+    "80,00 %",
+    "88,49 %",
+    "95,06 %"
    ],
-   "source_quote": "\"Classe A\" : les produits de la classe A constituent en générale 80% de la valeur totale du stock et 20 % de la quantité totale des produits",
+   "source_quote": "Manque de communication42325,50%88,49%",
    "id": "J5",
    "instrument": "j30",
    "source": {
     "file": "C01/support-gestion-professionnelle-du-temps.pdf",
-    "place": "p. 16"
+    "place": "p. 14"
    },
    "gates": {
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 3,
    "type": "mcq",
-   "question": "À quoi sert le diagramme de Pareto dans la gestion de votre temps ?",
-   "answer": "Ranger les tâches par priorité d’exécution sur une période",
+   "question": "Le service qualité de l’atelier du cours range ses réparations par quantité. Combien de types sur dix atteignent 80 % du total ?",
+   "answer": "Trois",
    "choices": [
-    "Ranger les tâches par priorité d’exécution sur une période",
-    "Calculer le temps moyen d’une tâche",
-    "Réserver une salle de réunion",
-    "Contrôler la ponctualité des salariés"
+    "Deux",
+    "Trois",
+    "Cinq",
+    "Huit"
    ],
-   "source_quote": "Pour la gestion du temps, cet outil permet de définir les tâches / les opérations par priorité d’exécution sur une période donnée",
+   "source_quote": "les références \"F,A,I\" qui représentent 3 types de réparations sur 10 (soit 30%), représentent 80% de la totalité des réparations",
    "id": "J6",
    "instrument": "j30",
    "source": {
@@ -772,7 +799,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
@@ -798,7 +826,8 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
@@ -818,22 +847,23 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": true,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 5,
    "type": "mcq",
-   "question": "Sur le diagramme de Gantt de votre projet, la ligne verticale tracée à la date du jour traverse une tâche. Qu’en concluez-vous ?",
-   "answer": "La tâche est en cours de réalisation",
+   "question": "Votre entreprise installe des « badgeuses ». Selon le cours, à quoi certaines entreprises les font-elles servir en plus du pointage ?",
+   "answer": "À afficher des messages et rappeler les règles de sécurité, d’hygiène ou de qualité",
    "choices": [
-    "La tâche est en cours de réalisation",
-    "La tâche est terminée",
-    "La tâche n’a pas commencé",
-    "La tâche est sur le chemin critique"
+    "À afficher des messages et rappeler les règles de sécurité, d’hygiène ou de qualité",
+    "À ouvrir les portes des locaux sécurisés",
+    "À payer les repas au restaurant d’entreprise",
+    "À calculer automatiquement les primes"
    ],
-   "source_quote": "Si la ligne vient à traverser des tâches, c’est que ces dernières sont en cours de réalisation",
+   "source_quote": "servent aussi à afficher des messages (communication interne), à rappeler aux employés les règles de sécurité, d’hygiène, de qualité, etc (procédures)",
    "id": "J9",
    "instrument": "j30",
    "source": {
@@ -844,33 +874,35 @@
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   },
   {
    "objective": 5,
    "type": "mcq",
-   "question": "Vous rédigez une procédure et voulez décrire la situation sans rien oublier. Quelle méthode du cours employez-vous ?",
-   "answer": "QQOQCCP",
+   "question": "Vous avez mené un QQOQCCP comme dans l’exemple du cours. Comment le cours conseille-t-il ensuite d’en présenter les résultats ?",
+   "answer": "Un slide par question, avec les réponses",
    "choices": [
-    "QQOQCCP",
-    "Le pendulage",
-    "L’analyse ABC",
-    "La pointeuse"
+    "Un slide par question, avec les réponses",
+    "Un tableau unique à sept colonnes",
+    "Une carte heuristique centrée sur le problème",
+    "Un compte rendu rédigé d’une page"
    ],
-   "source_quote": "Cette méthode est généralement employée dans la résolution de problèmes, dans la définition d’un projet, ou encore dans la rédaction d’une procédure",
+   "source_quote": "Il convient ensuite de présenter un slide par question avec des réponses.",
    "id": "J10",
    "instrument": "j30",
    "source": {
     "file": "C01/support-gestion-professionnelle-du-temps.pdf",
-    "place": "p. 12"
+    "place": "p. 13"
    },
    "gates": {
     "schema": true,
     "quoteFound": true,
     "answerPresent": null,
-    "duplicateOf": null
+    "duplicateOf": null,
+    "cold": "pass"
    },
    "problems": []
   }
