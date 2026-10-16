@@ -17,7 +17,7 @@ export const SELLER = {
   president: 'Tanguy Warsmann',
 };
 export const ICPF_URL = 'https://certif-icpf.org/articles/non-conformites-les-plus-frequentes-audit-qualiopi';
-export const KIT_URL = 'https://outils.vread.fr/kit-qualiopi-v10/';
+export const KIT_URL = 'https://qualiopi.jalonel.com/';
 export const SAMPLE_SOURCE = 'https://fr.wikiversity.org/wiki/Gestion_professionnelle_du_temps';
 
 const eur = (cents) => `${String(cents / 100).replace('.', ',')} €`;

@@ -96,7 +96,7 @@ ${frType(body)}
 </main>
 <footer class="foot"><div class="wrap">
   <p><strong>${BRAND}</strong> : évaluations Qualiopi indicateurs 8 et 11 rédigées à partir de vos supports. Un service de READ FRANCE SAS (SIREN 988 741 773), 11 rue Rouvet, 75019 Paris. Contact : <a href="mailto:${CONTACT}">${CONTACT}</a>.</p>
-  <p class="foot-links"><a href="mentions-legales.html">Mentions légales</a><a href="cgv-pro.html">CGV professionnels</a><a href="confidentialite.html">Confidentialité</a><a href="https://outils.vread.fr/kit-qualiopi-v10/">Kit Qualiopi V10</a></p>
+  <p class="foot-links"><a href="mentions-legales.html">Mentions légales</a><a href="cgv-pro.html">CGV professionnels</a><a href="confidentialite.html">Confidentialité</a><a href="https://qualiopi.jalonel.com/">Kit Qualiopi V10</a></p>
   <p class="small">« Qualiopi » est une marque de l’État, citée à titre descriptif. Ni ce site ni ses documents ne sont édités ou validés par l’État ou par un certificateur.</p>
 </div></footer>
 ${tail}</body>
