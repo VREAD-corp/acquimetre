@@ -63,3 +63,23 @@ footer.foot a{color:var(--muted)}
 :focus-visible{outline:3px solid #f59e0b;outline-offset:2px}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 button.btn{font:inherit;font-weight:600;cursor:pointer}button.btn:disabled{opacity:.6;cursor:not-allowed}
+/* hero facts, send-list, breadcrumbs, order summary */
+.brand .by{font-weight:500;font-size:13px;color:var(--muted);margin-left:4px}
+.hero .facts{list-style:none;padding:0;margin:14px 0 6px;display:grid;gap:6px;font-size:16px;max-width:760px}
+.hero .facts li{padding-left:22px;position:relative}.hero .facts li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:700}
+.checklist{padding-left:22px}.checklist li{margin:0 0 8px}
+.crumbs{font-size:14px;color:var(--muted);padding-top:14px}.crumbs a{color:var(--muted)}
+.order-summary{margin:16px 0}.order-summary h2,.order-faq h2{font-size:20px;margin:0 0 8px}.order-summary ul{padding-left:20px;margin:0 0 8px}
+.order-faq{margin:24px 0}
+.apercu{margin:0 0 16px}
+/* POOLED-READING-01 (rd-hero): the excerpt shows only in variant b (<html data-xp-rd-hero="b">, set by cro.js in <head>) */
+[data-hero-excerpt]{display:none}
+html[data-xp-rd-hero="b"] [data-hero-excerpt]{display:block}
+.hero-excerpt{margin:18px 0 0;max-width:520px}
+.ex-doc{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 16px;font-size:14.5px;line-height:1.45;box-shadow:0 1px 3px rgba(22,32,44,.08)}
+.ex-head{font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--brand);font-weight:700;margin:0 0 6px}
+.ex-key-head{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line)}
+.ex-q{font-weight:600;margin:6px 0 4px}.ex-choices{list-style:none;padding:0;margin:0 0 6px}.ex-line,.ex-key{margin:0 0 4px}
+.hero-excerpt figcaption{margin-top:8px}
+@media (min-width:900px){html[data-xp-rd-hero="b"] .hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;align-items:start}html[data-xp-rd-hero="b"] .hero-excerpt{margin:6px 0 0}}
+@media (max-width:600px){.hero{padding:26px 0 20px}.hero .lead{font-size:17px}.hero .ctas{margin:16px 0 6px}}

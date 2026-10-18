@@ -58,9 +58,17 @@ A READ FRANCE SAS service (venture V4-01 of `octave-asset-ventures`).
 ## Tracking
 
 `mesure.js` = the octave-checkout master (v:2, bot/webdriver filtering, `?octave_notrack=1`) with the site id fixed
-to `acquimetre`; `cro.js` byte-identical; goals `download`, `checkout`, `intake` (`cro-goals.js`). Site whitelisted in
-`octave-checkout` `TRACK_SITES_`, in `vread-revenue-lab/tools/cro-sources.json` and in the dashboard. No A/B test
-(one price per period, see the experiment).
+to `acquimetre`; `cro.js` byte-identical; goals `download`, `sample`, `checkout`, `intake` (`cro-goals.js`). Site
+whitelisted in `octave-checkout` `TRACK_SITES_`, in `vread-revenue-lab/tools/cro-sources.json` and in the dashboard.
+No price test. Since 2026-10-19 the home page takes part in the pooled hero test **POOLED-READING-01** (`site/assets/xp.js`,
+experiment `rd-hero`, by tab, `?hero=a|b`): b shows a verbatim excerpt of the sample (positioning questions 1-2 and
+their key) in the first screen; `xp.js` and `cro.js` load in `<head>` without `defer` so the variant is set before
+paint. Metric: first CTA click (`[data-cta]`, order links); secondary goal `sample`. Analysis pooled over the 7
+reading sites in vread-revenue-lab (`octave-asset-ventures/experiments/POOLED-READING-01.md`).
+
+SEO: breadcrumbs (visible + BreadcrumbList) on inner pages, FAQPage built from the visible FAQ, sitemap `lastmod` =
+last commit date of each page's source. `npm run e2e`: rd-hero a/b at 375 and 1440 px (CTA in the first screen);
+`BASE=https://outils.vread.fr/acquimetre/ npm run e2e` runs it live.
 
 ## Tests
 

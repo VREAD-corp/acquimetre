@@ -17,24 +17,35 @@
 <link rel="stylesheet" href="styles.css">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://js.stripe.com https://*.js.stripe.com; frame-src https://js.stripe.com https://*.js.stripe.com https://hooks.stripe.com https://link.com https://*.link.com; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://api.stripe.com https://link.com https://*.link.com; img-src 'self' data: https://*.stripe.com https://*.link.com; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <script src="mesure.js" defer></script>
-<script src="cro.js" data-site="acquimetre" data-api="https://script.google.com/macros/s/AKfycbzD1IRL8QALluKGZxgGiORFP6-DkC_qFJYR9aOxZiimxa06nbCqpzUI-9iLblp6V2VY/exec" data-hosts="outils.vread.fr" data-cta="a[href*='commander'],#pay-button,#upload-done" defer></script>
+<script src="xp.js"></script>
+<script src="cro.js" data-site="acquimetre" data-api="https://script.google.com/macros/s/AKfycbzD1IRL8QALluKGZxgGiORFP6-DkC_qFJYR9aOxZiimxa06nbCqpzUI-9iLblp6V2VY/exec" data-hosts="outils.vread.fr" data-cta="[data-cta],a[href*='commander'],#pay-button,#upload-done"></script>
 <script src="cro-goals.js" defer></script>
 
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
 <header class="top"><div class="wrap">
-  <a class="brand" href="./"><img src="favicon.svg" width="28" height="28" alt="">Acquimètre</a>
+  <a class="brand" href="./"><img src="favicon.svg" width="28" height="28" alt="">Acquimètre<span class="by">par READ FRANCE</span></a>
   <nav class="main" aria-label="Navigation principale"><a href="./#exemple">Exemple</a><a href="./#prix">Prix</a><a href="./#questions">Questions</a><a href="commander.html">Commander</a></nav>
 </div></header>
 <main id="main">
+<nav class="crumbs wrap" aria-label="Fil d’Ariane"><a href="https://outils.vread.fr/">outils.vread.fr</a> › <a href="./">Acquimètre</a> › <span aria-current="page">Commander</span></nav>
 <section class="wrap" aria-labelledby="commander-h">
 <h1 id="commander-h">Commander Acquimètre</h1>
 <p>Évaluations Qualiopi indicateurs 8 et 11 pour 1 à 10 formations, rédigées à partir de vos supports. Vente réservée aux professionnels (entreprises immatriculées en France, SIREN obligatoire). Après le paiement, vous recevez la facture et le lien d’envoi de vos supports ; la livraison a lieu sous 5 jours ouvrés après votre envoi complet.</p>
+<div class="card order-summary" data-section="recap">
+  <h2>Ce que vous commandez</h2>
+  <ul>
+    <li>Pour chaque formation : test de positionnement, évaluation de fin de formation, évaluation à J+30, corrigés et barèmes avec le passage cité et sa page, fiche de résultats par stagiaire, fichier CSV.</li>
+    <li>Pour la commande : un dossier de preuves indicateurs 8 et 11 (PDF). Le tout en DOCX modifiables et PDF, dans une archive ZIP envoyée par e-mail.</li>
+    <li>Ensuite, vous déposez pour chaque formation le programme et le support remis aux stagiaires (PDF, DOCX ou PPTX, 15 Mo par fichier, 40 fichiers au plus).</li>
+  </ul>
+  <p class="small">Remboursement intégral si l’archive n’est pas livrée 10 jours ouvrés après votre envoi complet (CGV, art. 6). Une question inexacte signalée dans les 30 jours est remplacée sans frais (art. 10). <a href="./#exemple">Voir l’exemple complet</a> · <a href="https://outils.vread.fr/a-propos/">Qui fait ce site, et comment</a></p>
+</div>
 <form id="octave-pay" class="checkout-form card" novalidate>
   <fieldset class="field-group"><legend>Tarif</legend>
     <label class="offer-choice"><input type="radio" name="product" value="eval-8-11" checked><span><strong>Tarif standard</strong> : <span data-price-for="eval-8-11">249 € net (TVA non applicable, art. 293 B du CGI)</span></span></label>
-    <label class="offer-choice"><input type="radio" name="product" value="eval-8-11-kit"><span><strong>Acheteurs du Kit Qualiopi</strong> : <span data-price-for="eval-8-11-kit">199 € net (TVA non applicable, art. 293 B du CGI)</span></span></label>
+    <label class="offer-choice"><input type="radio" name="product" value="eval-8-11-kit"><span><strong>Acheteurs du Kit Qualiopi V10 de READ FRANCE</strong> : <span data-price-for="eval-8-11-kit">199 € net (TVA non applicable, art. 293 B du CGI)</span></span></label>
     <p class="small muted">Prix retenu : <span id="product-price">249 € net (TVA non applicable, art. 293 B du CGI)</span></p>
   </fieldset>
   <div id="kit-proof" class="field-group" hidden>
@@ -70,15 +81,21 @@
   <div id="payment-element"></div>
   <p id="pay-error" class="status err" role="alert" hidden></p>
   <button type="submit" id="pay-button" class="pay-button" disabled>Payer 249 € et recevoir le lien d’envoi</button>
-  <p class="small muted">Paiement sécurisé par carte bancaire avec Stripe : vos données de carte sont saisies dans un cadre Stripe et ne transitent pas par nos serveurs.</p>
+  <p class="small muted">Paiement sécurisé par carte bancaire avec Stripe : vos données de carte sont saisies dans un cadre Stripe et ne transitent pas par nos serveurs. Livraison sous 5 jours ouvrés après votre envoi complet, sinon remboursement intégral à 10 jours ouvrés (CGV, art. 6).</p>
   <noscript><p class="status err">Le paiement nécessite JavaScript.</p></noscript>
 </form>
+<div class="order-faq">
+  <h2>Avant de payer</h2>
+  <details id="c-q-formations"><summary>Que compte une « formation » ?</summary><p>Un programme avec ses objectifs et son support, quelle que soit sa durée. Deux sessions du même programme comptent pour une formation. Un parcours très long (plus de 200 pages de support) peut être découpé en deux formations : nous vous le proposons avant de commencer.</p></details>
+  <details id="c-q-facture"><summary>Puis-je avoir une facture, un devis ou payer par virement ?</summary><p>La facture acquittée, avec votre SIREN et la mention « TVA non applicable, art. 293 B du CGI », arrive par e-mail dès le paiement. Le paiement se fait par carte uniquement : le devis avec paiement par virement n’est pas ouvert pour Acquimètre. Si votre organisme ne peut payer que par virement, écrivez à octave@vread.fr avant de commander.</p></details>
+  <details id="c-q-format"><summary>Puis-je modifier les questions ?</summary><p>Oui. Les DOCX et le CSV vous appartiennent pour votre activité : modifiez, retirez, ajoutez. Seule la revente des évaluations comme produit est exclue (article 9 des CGV).</p></details>
+</div>
 <p class="small muted">Après votre commande : le questionnaire de lecture de votre règlement intérieur et de votre livret d’accueil, avec <a href="https://outils.vread.fr/lu-et-retenu/commander.html?offre=acquimetre">Lu et Retenu à 59 € net</a> pour les clients d’Acquimètre.</p>
 </section>
 </main>
 <footer class="foot"><div class="wrap">
   <p><strong>Acquimètre</strong> : évaluations Qualiopi indicateurs 8 et 11 rédigées à partir de vos supports. Un service de READ FRANCE SAS (SIREN 988 741 773), 11 rue Rouvet, 75019 Paris. Contact : <a href="mailto:octave@vread.fr">octave@vread.fr</a>.</p>
-  <p class="foot-links"><a href="mentions-legales.html">Mentions légales</a><a href="cgv-pro.html">CGV professionnels</a><a href="confidentialite.html">Confidentialité</a><a href="https://qualiopi.jalonel.com/">Kit Qualiopi V10</a></p>
+  <p class="foot-links"><a href="mentions-legales.html">Mentions légales</a><a href="cgv-pro.html">CGV professionnels</a><a href="confidentialite.html">Confidentialité</a><a href="https://outils.vread.fr/a-propos/">Qui fait ce site, et comment</a><a href="https://outils.vread.fr/">Autres outils de lecture de READ FRANCE</a></p>
   <p class="small">« Qualiopi » est une marque de l’État, citée à titre descriptif. Ni ce site ni ses documents ne sont édités ou validés par l’État ou par un certificateur.</p>
 </div></footer>
 <script src="checkout/checkout-config.js"></script>

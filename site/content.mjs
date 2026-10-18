@@ -6,7 +6,7 @@ export const SITE = SITE_ORIGIN + SITE_BASE;
 export const CONTACT = 'octave@vread.fr';
 export const TERMS_VERSION = 'cgv-pro-eval-2026-10-13';
 export const TERMS_DATE = '13 octobre 2026';
-export const UPDATED = '2026-10-13';
+export const UPDATED = '2026-10-18';
 export const SELLER = {
   name: 'READ FRANCE SAS',
   form: 'société par actions simplifiée (SAS)',
@@ -17,25 +17,105 @@ export const SELLER = {
   president: 'Tanguy Warsmann',
 };
 export const ICPF_URL = 'https://certif-icpf.org/articles/non-conformites-les-plus-frequentes-audit-qualiopi';
-export const KIT_URL = 'https://qualiopi.jalonel.com/';
+export const ABOUT_URL = 'https://outils.vread.fr/a-propos/';
+export const ABOUT_LABEL = 'Qui fait ce site, et comment';
 export const SAMPLE_SOURCE = 'https://fr.wikiversity.org/wiki/Gestion_professionnelle_du_temps';
 
 const eur = (cents) => `${String(cents / 100).replace('.', ',')} €`;
+
+/**
+ * Pooled test POOLED-READING-01 (cro.js experiment `rd-hero`), variant b: a verbatim excerpt of the published sample,
+ * hidden unless <html data-xp-rd-hero="b">. Questions 1 and 2 of C01-1-positionnement-stagiaire.pdf (p. 1, choices in
+ * the order of the PDF) and their key in C01-4-corriges-baremes-sources.pdf (p. 1 and 2); tests/site.test.mjs checks
+ * them against samples/gestion-temps/work/C01/draft.json.
+ */
+export const HERO_EXCERPT = {
+  q1: 'Selon vous, à quoi sont dues la plupart des pertes subies par les entreprises et les organisations ?',
+  q1choices: ['À la hausse des coûts de l’énergie', 'À un manque de gestion du temps', 'À l’évolution de la réglementation', 'À un manque de trésorerie'],
+  q1key: 'b',
+  q1quote: 'La plupart des pertes subies par les entreprises et par les organisations sont dues à un manque de gestion du temps',
+  q1page: 4,
+  q2: 'Comment appelle-t-on le fait de tout remettre au lendemain ? (un mot)',
+  q2key: 'procrastination',
+  q2quote: 'On peut parler de la procrastination, il s’agit du fait de tout remettre au lendemain',
+  q2page: 5,
+};
+export function heroExcerpt(sample) {
+  const x = HERO_EXCERPT;
+  return `    <figure class="hero-excerpt" data-hero-excerpt>
+      <div class="ex-doc">
+        <p class="ex-head">Test de positionnement, version stagiaire</p>
+        <p class="ex-q">1. ${x.q1}</p>
+        <ul class="ex-choices">${x.q1choices.map((c, i) => `<li>☐ ${'abcd'[i]}) ${c}</li>`).join('')}</ul>
+        <p class="ex-q">2. ${x.q2}</p>
+        <p class="ex-line">Réponse : ……………………</p>
+        <p class="ex-head ex-key-head">Corrigé, réservé au formateur</p>
+        <p class="ex-key">1 → ${x.q1key}) · source : support, p. ${x.q1page} : « ${x.q1quote} »</p>
+        <p class="ex-key">2 → ${x.q2key} · source : support, p. ${x.q2page} : « ${x.q2quote} »</p>
+      </div>
+      <figcaption class="small muted">Extrait réel de l’exemple publié : questions 1 et 2 du test de positionnement et leur corrigé, tirés de la leçon Wikiversité « Gestion professionnelle du temps » (CC BY-SA 4.0). <a data-cta data-mesure="free_download" href="exemple/${sample.zip}">Télécharger l’exemple complet</a></figcaption>
+    </figure>`;
+}
+
+/** FAQ: the same entries feed the visible <details> and the FAQPage JSON-LD (1:1). */
+export function faqItems({ kit }) {
+  return [
+    ['q-kit', 'J’ai déjà le Kit Qualiopi : qu’est-ce que cela ajoute ?', `Le kit donne les trames (T04 fiche de positionnement, T29 test avec barème, T06 suivi et évaluation des acquis). Il ne peut pas contenir les questions de vos formations. Acquimètre remplit ces trames avec des questions tirées de vos supports. Les acheteurs du kit paient ${eur(kit)}.`],
+    ['q-formations', 'Que compte une « formation » ?', 'Un programme avec ses objectifs et son support, quelle que soit sa durée. Deux sessions du même programme comptent pour une formation. Un parcours très long (plus de 200 pages de support) peut être découpé en deux formations : nous vous le proposons avant de commencer.'],
+    ['q-objectifs', 'Mes objectifs de programme sont flous. Comment faites-vous ?', 'Nous les reformulons en objectifs évaluables à partir du plan de votre support, et nous l’indiquons dans les corrigés. Vous les gardez ou les remplacez par ceux de votre fiche programme avant de signer le tableau de validation.'],
+    ['q-delai', 'Et si la livraison dépasse 5 jours ouvrés ?', 'Vous pouvez demander le remboursement intégral si l’archive n’est pas livrée 10 jours ouvrés après votre envoi complet (article 6 des CGV).'],
+    ['q-facture', 'Puis-je avoir une facture, un devis ou payer par virement ?', 'La facture acquittée, avec votre SIREN et la mention « TVA non applicable, art. 293 B du CGI », arrive par e-mail dès le paiement. Le paiement se fait par carte uniquement : le devis avec paiement par virement n’est pas ouvert pour Acquimètre. Si votre organisme ne peut payer que par virement, écrivez à octave@vread.fr avant de commander.'],
+    ['q-satisfaction', 'L’évaluation à J+30 remplace-t-elle mon questionnaire de satisfaction à froid ?', 'Non. Elle mesure les connaissances (indicateur 11). Le recueil des appréciations relève de l’indicateur 30, que ICPF cite comme première cause de non-conformité en 2024 (802 non-conformités). Gardez les deux.'],
+    ['q-format', 'Puis-je modifier les questions ?', 'Oui. Les DOCX et le CSV vous appartiennent pour votre activité : modifiez, retirez, ajoutez. Seule la revente des évaluations comme produit est exclue (article 9 des CGV).'],
+  ];
+}
 
 /** Home page: the offer, the sample, the price, the process, the limits, the FAQ. */
 export function homeBody(p) {
   const { full, kit, sample, open } = p;
   const cta = open
-    ? `<a class="btn btn-primary" href="commander.html">Commander : ${eur(full)} net</a>`
+    ? `<a class="btn btn-primary" data-cta href="commander.html">Commander : ${eur(full)} net</a>`
     : `<a class="btn btn-primary" href="mailto:${CONTACT}?subject=Acquim%C3%A8tre">Écrire pour réserver</a>`;
   return `
 <section class="hero" id="haut">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="kicker">Qualiopi, indicateurs 8 et 11</p>
+      <h1>Vos évaluations Qualiopi 8 et 11, rédigées à partir de vos supports</h1>
+      <p class="lead">Pour chaque formation : test de positionnement, évaluation de fin de formation et évaluation à J+30, avec corrigés, barèmes et la page de votre support d’où vient chaque question.</p>
+      <div class="ctas">${cta}<a class="btn btn-ghost" data-cta data-mesure="free_download" href="exemple/${sample.zip}">Télécharger l’exemple (ZIP)</a></div>
+      <ul class="facts">
+        <li><strong>${eur(full)} net</strong> pour 1 à 10 formations, TVA non applicable (art. 293 B du CGI). Acheteurs du Kit Qualiopi V10 de READ FRANCE : ${eur(kit)}.</li>
+        <li>Archive ZIP : DOCX modifiables, PDF et CSV. De 28 à 44 questions par formation (${sample.questions} dans l’exemple).</li>
+        <li>Livraison par e-mail sous 5 jours ouvrés après votre envoi complet. Remboursement intégral si elle n’arrive pas 10 jours ouvrés après cet envoi (<a href="cgv-pro.html">CGV, art. 6</a>).</li>
+      </ul>
+      <p class="small muted">Vente aux organismes immatriculés en France (SIREN).</p>
+    </div>
+${heroExcerpt(sample)}
+  </div>
+</section>
+
+<section class="block" id="a-envoyer">
   <div class="wrap">
-    <p class="kicker">Qualiopi, indicateurs 8 et 11</p>
-    <h1>Vos tests de positionnement et vos évaluations de fin de formation, rédigés à partir de vos supports de cours</h1>
-    <p class="lead">Vous déposez les supports de vos formations (PDF, Word ou PowerPoint). Sous 5 jours ouvrés, vous recevez pour chacune un test de positionnement, une évaluation de fin de formation et une évaluation à J+30, avec corrigés, barèmes et, pour chaque question, la page de votre support dont elle vient. ${eur(full)} net pour 1 à 10 formations.</p>
-    <div class="ctas">${cta}<a class="btn btn-ghost" href="#exemple">Voir l’exemple complet</a></div>
-    <p class="small muted">Vente aux organismes immatriculés en France (SIREN). TVA non applicable, art. 293 B du CGI. Acheteurs du <a href="${KIT_URL}">Kit Qualiopi</a> : ${eur(kit)}.</p>
+    <h2>Ce que vous nous envoyez</h2>
+    <ul class="checklist">
+      <li>Le programme de chaque formation (objectifs, prérequis) et le support remis aux stagiaires.</li>
+      <li>Des fichiers PDF, DOCX ou PPTX qui contiennent du texte. Un document scanné sans texte ne peut pas être lu : nous vous l’écrivons dans les 2 jours ouvrés.</li>
+      <li>De 1 à 10 formations par commande, 40 fichiers au plus, 15 Mo par fichier.</li>
+      <li>Aucune donnée de stagiaire : retirez noms, résultats et coordonnées avant l’envoi.</li>
+    </ul>
+    <p>Vous déposez ces fichiers sur un lien personnel reçu avec la facture, juste après le paiement. Le délai de 5 jours ouvrés part du moment où vous indiquez que votre envoi est complet.</p>
+  </div>
+</section>
+
+<section class="block" id="pour-qui">
+  <div class="wrap">
+    <h2>Trois situations où le service sert</h2>
+    <div class="grid3">
+      <div class="card"><h3>Formateur indépendant</h3><p>Deux ou trois programmes, pas de temps pour écrire 30 questions par cours. Une seule commande couvre tout votre catalogue, et vous gardez les DOCX pour les sessions suivantes.</p></div>
+      <div class="card"><h3>Organisme avec un catalogue</h3><p>Jusqu’à 10 formations par commande, au même prix. Chaque formation reçoit ses trois évaluations et sa fiche de résultats ; le dossier de preuves les reprend toutes.</p></div>
+      <div class="card"><h3>Avant un audit</h3><p>Audit initial, de surveillance ou de renouvellement : les instruments, les barèmes et la règle de décision sont écrits avant l’audit. Il vous reste à les faire passer à vos stagiaires et à garder les résultats.</p></div>
+    </div>
   </div>
 </section>
 
@@ -65,6 +145,15 @@ export function homeBody(p) {
   <div class="wrap">
     <h2>L’exemple complet, sur un vrai cours</h2>
     <p>Nous avons traité la leçon « <a href="${SAMPLE_SOURCE}">Gestion professionnelle du temps</a> » de Wikiversité (10 chapitres, ${sample.words} mots, licence CC BY-SA 4.0), mise en page comme un support de cours. L’archive ci-dessous est exactement ce qu’un client reçoit : ${sample.questions} questions pour une formation, ${sample.files} fichiers.</p>
+    <div class="card apercu">
+      <p class="small muted">Aperçu, page 2 du corrigé de l’exemple : la règle de décision écrite avant de faire passer le test de positionnement.</p>
+      <div class="tablewrap"><table class="t">
+        <tr><th>Résultat</th><th>Décision</th><th>Action et trace</th></tr>
+        <tr><td>Score &lt; 30 %</td><td>Parcours standard avec points d’attention</td><td>Repérer les objectifs à 0 point et prévoir un accompagnement renforcé sur ces objectifs ; noter la décision dans la fiche de résultats</td></tr>
+        <tr><td>30 % ≤ score &lt; 70 %</td><td>Parcours standard</td><td>Aucune adaptation</td></tr>
+        <tr><td>Score ≥ 70 %</td><td>Parcours allégé ou approfondissement</td><td>Proposer d’alléger les séquences déjà maîtrisées (objectifs à 100 %) ou des exercices d’approfondissement ; ajuster la convention si la durée change</td></tr>
+      </table></div>
+    </div>
     <ul class="dl">
       <li><a href="exemple/${sample.zip}" data-mesure="free_download">Archive complète (ZIP, ${sample.zipKb} Ko)</a> <span class="muted small">DOCX, PDF et CSV</span></li>
       <li><a href="exemple/dossier-preuves-indicateurs-8-11.pdf" data-mesure="free_download">Dossier de preuves indicateurs 8 et 11 (PDF)</a></li>
@@ -109,15 +198,7 @@ export function homeBody(p) {
       <li>Il ne lit pas les supports scannés (images sans texte). Si un fichier est illisible, nous vous l’écrivons dans les 2 jours ouvrés, avant de commencer.</li>
       <li>Il ne fait pas passer les tests : vous les utilisez sur papier ou dans votre outil (le CSV s’importe dans la plupart des outils de quiz).</li>
     </ul>
-    <p>Les questions sont rédigées par Octave, l’assistant IA de READ FRANCE SAS, à partir de vos seuls supports, puis contrôlées par programme : chaque citation doit être retrouvée mot pour mot dans vos fichiers, chaque réponse en un mot doit figurer dans le passage cité et pas dans l’énoncé, et aucune question ne doit doubler une autre. Le formateur relit et valide avant usage : c’est lui l’évaluateur.</p>
-  </div>
-</section>
-
-<section class="block" id="lu-et-retenu">
-  <div class="wrap">
-    <h2>Et le règlement intérieur remis à vos stagiaires ?</h2>
-    <div class="card"><p>L’article L6353-8 du code du travail vous fait remettre le règlement intérieur avant l’inscription définitive. <a href="https://outils.vread.fr/lu-et-retenu/">Lu et Retenu</a>, autre service de READ FRANCE, en tire un questionnaire de lecture de 8 à 20 questions avec corrigé, attestation à signer et registre, à partir de votre propre document (et de votre livret d’accueil si vous le souhaitez). Pour les clients d’Acquimètre : 59 € net au lieu de 149 €, livraison sous 5 jours ouvrés. Ce questionnaire ne vaut pas validation juridique de votre règlement.</p>
-    <p><a class="btn btn-ghost btn-sm" href="https://outils.vread.fr/lu-et-retenu/commander.html?offre=acquimetre">Commander au tarif Acquimètre</a> <a class="btn btn-ghost btn-sm" href="https://outils.vread.fr/lu-et-retenu/#exemple">Voir l’exemple</a></p></div>
+    <p>Les questions sont rédigées par Octave, l’assistant IA de READ FRANCE SAS, à partir de vos seuls supports, puis contrôlées par programme : chaque citation doit être retrouvée mot pour mot dans vos fichiers, chaque réponse en un mot doit figurer dans le passage cité et pas dans l’énoncé, et aucune question ne doit doubler une autre. Le formateur relit et valide avant usage : c’est lui l’évaluateur. <a href="${ABOUT_URL}">${ABOUT_LABEL}</a>.</p>
   </div>
 </section>
 
@@ -131,12 +212,7 @@ export function homeBody(p) {
 <section class="block" id="questions">
   <div class="wrap">
     <h2>Questions fréquentes</h2>
-    <details id="q-kit"><summary>J’ai déjà le Kit Qualiopi : qu’est-ce que cela ajoute ?</summary><p>Le kit donne les trames (T04 fiche de positionnement, T29 test avec barème, T06 suivi et évaluation des acquis). Il ne peut pas contenir les questions de vos formations. Acquimètre remplit ces trames avec des questions tirées de vos supports. Les acheteurs du kit paient ${eur(kit)}.</p></details>
-    <details id="q-formations"><summary>Que compte une « formation » ?</summary><p>Un programme avec ses objectifs et son support, quelle que soit sa durée. Deux sessions du même programme comptent pour une formation. Un parcours très long (plus de 200 pages de support) peut être découpé en deux formations : nous vous le proposons avant de commencer.</p></details>
-    <details id="q-objectifs"><summary>Mes objectifs de programme sont flous. Comment faites-vous ?</summary><p>Nous les reformulons en objectifs évaluables à partir du plan de votre support, et nous l’indiquons dans les corrigés. Vous les gardez ou les remplacez par ceux de votre fiche programme avant de signer le tableau de validation.</p></details>
-    <details id="q-delai"><summary>Et si la livraison dépasse 5 jours ouvrés ?</summary><p>Vous pouvez demander le remboursement intégral si l’archive n’est pas livrée 10 jours ouvrés après votre envoi complet (article 6 des CGV).</p></details>
-    <details id="q-satisfaction"><summary>L’évaluation à J+30 remplace-t-elle mon questionnaire de satisfaction à froid ?</summary><p>Non. Elle mesure les connaissances (indicateur 11). Le recueil des appréciations relève de l’indicateur 30, que ICPF cite comme première cause de non-conformité en 2024 (802 non-conformités). Gardez les deux.</p></details>
-    <details id="q-format"><summary>Puis-je modifier les questions ?</summary><p>Oui. Les DOCX et le CSV vous appartiennent pour votre activité : modifiez, retirez, ajoutez. Seule la revente des évaluations comme produit est exclue.</p></details>
+${faqItems(p).map(([id, q, r]) => `    <details id="${id}"><summary>${q}</summary><p>${r}</p></details>`).join('\n')}
   </div>
 </section>
 
@@ -145,6 +221,14 @@ export function homeBody(p) {
     <h2>Commander</h2>
     <p>${open ? `Paiement par carte, facture immédiate, lien d’envoi des supports par e-mail. <a class="btn btn-primary btn-sm" href="commander.html">Commander pour ${eur(full)}</a>` : `Les commandes ouvrent bientôt. Écrivez à <a href="mailto:${CONTACT}">${CONTACT}</a> pour réserver un créneau.`}</p>
     <p class="small muted">Une question avant de commander ? Écrivez à <a href="mailto:${CONTACT}">${CONTACT}</a> : réponse sous 1 jour ouvré.</p>
+  </div>
+</section>
+
+<section class="block" id="lu-et-retenu">
+  <div class="wrap">
+    <h2>Et le règlement intérieur remis à vos stagiaires ?</h2>
+    <div class="card"><p>L’article L6353-8 du code du travail vous fait remettre le règlement intérieur avant l’inscription définitive. <a href="https://outils.vread.fr/lu-et-retenu/">Lu et Retenu</a>, autre service de READ FRANCE, en tire un questionnaire de lecture de 8 à 20 questions avec corrigé, attestation à signer et registre, à partir de votre propre document (et de votre livret d’accueil si vous le souhaitez). Pour les clients d’Acquimètre : 59 € net au lieu de 149 €, livraison sous 5 jours ouvrés. Ce questionnaire ne vaut pas validation juridique de votre règlement.</p>
+    <p><a class="btn btn-ghost btn-sm" href="https://outils.vread.fr/lu-et-retenu/commander.html?offre=acquimetre">Commander au tarif Acquimètre</a> <a class="btn btn-ghost btn-sm" href="https://outils.vread.fr/lu-et-retenu/#exemple">Voir l’exemple</a></p></div>
   </div>
 </section>`;
 }
@@ -155,10 +239,19 @@ export function commanderBody(p) {
   return `<section class="wrap" aria-labelledby="commander-h">
 <h1 id="commander-h">Commander Acquimètre</h1>
 <p>Évaluations Qualiopi indicateurs 8 et 11 pour 1 à 10 formations, rédigées à partir de vos supports. Vente réservée aux professionnels (entreprises immatriculées en France, SIREN obligatoire). Après le paiement, vous recevez la facture et le lien d’envoi de vos supports ; la livraison a lieu sous 5 jours ouvrés après votre envoi complet.</p>
+<div class="card order-summary" data-section="recap">
+  <h2>Ce que vous commandez</h2>
+  <ul>
+    <li>Pour chaque formation : test de positionnement, évaluation de fin de formation, évaluation à J+30, corrigés et barèmes avec le passage cité et sa page, fiche de résultats par stagiaire, fichier CSV.</li>
+    <li>Pour la commande : un dossier de preuves indicateurs 8 et 11 (PDF). Le tout en DOCX modifiables et PDF, dans une archive ZIP envoyée par e-mail.</li>
+    <li>Ensuite, vous déposez pour chaque formation le programme et le support remis aux stagiaires (PDF, DOCX ou PPTX, 15 Mo par fichier, 40 fichiers au plus).</li>
+  </ul>
+  <p class="small">Remboursement intégral si l’archive n’est pas livrée 10 jours ouvrés après votre envoi complet (CGV, art. 6). Une question inexacte signalée dans les 30 jours est remplacée sans frais (art. 10). <a href="./#exemple">Voir l’exemple complet</a> · <a href="${ABOUT_URL}">${ABOUT_LABEL}</a></p>
+</div>
 <form id="octave-pay" class="checkout-form card" novalidate>
   <fieldset class="field-group"><legend>Tarif</legend>
     <label class="offer-choice"><input type="radio" name="product" value="eval-8-11" checked><span><strong>Tarif standard</strong> : <span data-price-for="eval-8-11">${eur(full)} net (TVA non applicable, art. 293 B du CGI)</span></span></label>
-    <label class="offer-choice"><input type="radio" name="product" value="eval-8-11-kit"><span><strong>Acheteurs du Kit Qualiopi</strong> : <span data-price-for="eval-8-11-kit">${eur(kit)} net (TVA non applicable, art. 293 B du CGI)</span></span></label>
+    <label class="offer-choice"><input type="radio" name="product" value="eval-8-11-kit"><span><strong>Acheteurs du Kit Qualiopi V10 de READ FRANCE</strong> : <span data-price-for="eval-8-11-kit">${eur(kit)} net (TVA non applicable, art. 293 B du CGI)</span></span></label>
     <p class="small muted">Prix retenu : <span id="product-price">${eur(full)} net (TVA non applicable, art. 293 B du CGI)</span></p>
   </fieldset>
   <div id="kit-proof" class="field-group" hidden>
@@ -194,9 +287,13 @@ export function commanderBody(p) {
   <div id="payment-element"></div>
   <p id="pay-error" class="status err" role="alert" hidden></p>
   <button type="submit" id="pay-button" class="pay-button" disabled>Payer ${eur(full)} et recevoir le lien d’envoi</button>
-  <p class="small muted">Paiement sécurisé par carte bancaire avec Stripe : vos données de carte sont saisies dans un cadre Stripe et ne transitent pas par nos serveurs.</p>
+  <p class="small muted">Paiement sécurisé par carte bancaire avec Stripe : vos données de carte sont saisies dans un cadre Stripe et ne transitent pas par nos serveurs. Livraison sous 5 jours ouvrés après votre envoi complet, sinon remboursement intégral à 10 jours ouvrés (CGV, art. 6).</p>
   <noscript><p class="status err">Le paiement nécessite JavaScript.</p></noscript>
 </form>
+<div class="order-faq">
+  <h2>Avant de payer</h2>
+${faqItems(p).filter(([id]) => ['q-facture', 'q-format', 'q-formations'].includes(id)).map(([id, q, r]) => `  <details id="c-${id}"><summary>${q}</summary><p>${r}</p></details>`).join('\n')}
+</div>
 <p class="small muted">Après votre commande : le questionnaire de lecture de votre règlement intérieur et de votre livret d’accueil, avec <a href="https://outils.vread.fr/lu-et-retenu/commander.html?offre=acquimetre">Lu et Retenu à 59 € net</a> pour les clients d’Acquimètre.</p>
 </section>`;
 }

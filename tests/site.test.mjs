@@ -75,3 +75,34 @@ test('open build: commander (2 offers, rights attestation, kit proof, CSP), comm
   assert.match(read(join(out, 'envoyer.html')), /id="upload-done"/);
   if (existsSync(join(GAS_WEB, 'pay.js'))) for (const f of ['pay.js', 'order.js']) assert.equal(read(join(out, 'checkout', f)), read(join(GAS_WEB, f)), f);
 });
+
+test('CRO pass 2026-10-18: rd-hero (POOLED-READING-01), real excerpt, breadcrumbs, no Jalonel link, sitemap lastmod', async () => {
+  const xp = read(join(ROOT, 'site/assets/xp.js'));
+  const OCTAVE_XP = new Function('window', xp + '; return window.OCTAVE_XP;')({});
+  const rd = OCTAVE_XP.find((e) => e.id === 'rd-hero');
+  assert.deepEqual([rd.variants, rd.mode, rd.param], [['a', 'b'], 'tab', 'hero']);
+  assert.ok(new RegExp(rd.pages).test('/acquimetre/') && new RegExp(rd.pages).test('/acquimetre/index.html') && !new RegExp(rd.pages).test('/acquimetre/commander.html'));
+  const home = read(join(DOCS, 'index.html'));
+  // xp.js then cro.js, both blocking in <head>, so <html data-xp-rd-hero> is set before the first paint.
+  const head = home.slice(0, home.indexOf('</head>'));
+  assert.ok(head.indexOf('<script src="xp.js"></script>') > 0 && head.indexOf('<script src="xp.js"></script>') < head.indexOf('<script src="cro.js"'));
+  assert.doesNotMatch(head, /<script src="cro\.js"[^>]*defer/);
+  assert.match(home, /<figure class="hero-excerpt" data-hero-excerpt>/);
+  // The excerpt is verbatim from the sample's draft (questions, key, quotes).
+  const { HERO_EXCERPT: x } = await import('../site/content.mjs');
+  const draft = JSON.parse(read(join(ROOT, 'samples/gestion-temps/work/C01/draft.json')));
+  const [i1, i2] = draft.positioning.items;
+  assert.equal(x.q1, i1.question); assert.equal(x.q2, i2.question);
+  assert.deepEqual([...x.q1choices].sort(), [...i1.choices].sort());
+  assert.equal(x.q1choices['abcd'.indexOf(x.q1key)], i1.answer);
+  assert.equal(x.q2key, i2.answer); assert.equal(x.q1quote, i1.source_quote); assert.equal(x.q2quote, i2.source_quote);
+  for (const page of readdirSync(DOCS).filter((f) => f.endsWith('.html'))) assert.doesNotMatch(read(join(DOCS, page)), /jalonel/i, page);
+  assert.match(home, /href="https:\/\/outils\.vread\.fr\/a-propos\/"/);
+  const cgv = read(join(DOCS, 'cgv-pro.html'));
+  assert.match(cgv, /<nav class="crumbs wrap" aria-label="Fil d’Ariane">/);
+  assert.ok(ld(cgv).some((j) => j['@type'] === 'BreadcrumbList' && j.itemListElement.length === 3));
+  const faq = ld(home).find((j) => j['@type'] === 'FAQPage');
+  const visible = [...home.matchAll(/<details id="q-[a-z]+"><summary>([^<]+)<\/summary>/g)].map((m) => m[1]);
+  assert.equal(faq.mainEntity.length, visible.length);
+  for (const [, d] of read(join(DOCS, 'sitemap.xml')).matchAll(/<lastmod>([^<]+)<\/lastmod>/g)) assert.match(d, /^2026-\d\d-\d\d$/);
+});
