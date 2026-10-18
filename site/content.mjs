@@ -53,7 +53,7 @@ export function heroExcerpt(sample) {
         <p class="ex-key">1 → ${x.q1key}) · source : support, p. ${x.q1page} : « ${x.q1quote} »</p>
         <p class="ex-key">2 → ${x.q2key} · source : support, p. ${x.q2page} : « ${x.q2quote} »</p>
       </div>
-      <figcaption class="small muted">Extrait réel de l’exemple publié : questions 1 et 2 du test de positionnement et leur corrigé, tirés de la leçon Wikiversité « Gestion professionnelle du temps » (CC BY-SA 4.0). <a data-cta data-mesure="free_download" href="exemple/${sample.zip}">Télécharger l’exemple complet</a></figcaption>
+      <figcaption class="small muted">Extrait réel de l’exemple publié : questions 1 et 2 du test de positionnement et leur corrigé, tirés de la leçon Wikiversité « Gestion professionnelle du temps » (CC BY-SA 4.0). <a data-cta data-mesure="sample_click" href="#exemple">Voir l’exemple complet, gratuit</a></figcaption>
     </figure>`;
 }
 
@@ -82,7 +82,7 @@ export function homeBody(p) {
       <p class="kicker">Qualiopi, indicateurs 8 et 11</p>
       <h1>Vos évaluations Qualiopi 8 et 11, rédigées à partir de vos supports</h1>
       <p class="lead">Pour chaque formation : test de positionnement, évaluation de fin de formation et évaluation à J+30, avec corrigés, barèmes et la page de votre support d’où vient chaque question.</p>
-      <div class="ctas">${cta}<a class="btn btn-ghost" data-cta data-mesure="free_download" href="exemple/${sample.zip}">Télécharger l’exemple (ZIP)</a></div>
+      <div class="ctas">${cta}<a class="btn btn-ghost" data-cta data-mesure="sample_click" href="exemple/C01-4-corriges-baremes-sources.pdf">Voir l’exemple gratuit (PDF)</a></div>
       <ul class="facts">
         <li><strong>${eur(full)} net</strong> pour 1 à 10 formations, TVA non applicable (art. 293 B du CGI).</li>
         <li>Archive ZIP : DOCX modifiables, PDF et CSV. De 28 à 44 questions par formation (${sample.questions} dans l’exemple).</li>
@@ -154,12 +154,12 @@ ${heroExcerpt(sample)}
       </table></div>
     </div>
     <ul class="dl">
-      <li><a href="exemple/${sample.zip}" data-mesure="free_download">Archive complète (ZIP, ${sample.zipKb} Ko)</a> <span class="muted small">DOCX, PDF et CSV</span></li>
-      <li><a href="exemple/dossier-preuves-indicateurs-8-11.pdf" data-mesure="free_download">Dossier de preuves indicateurs 8 et 11 (PDF)</a></li>
-      <li><a href="exemple/C01-1-positionnement-stagiaire.pdf" data-mesure="free_download">Test de positionnement, version stagiaire (PDF)</a></li>
-      <li><a href="exemple/C01-2-fin-de-formation-stagiaire.pdf" data-mesure="free_download">Évaluation de fin de formation, version stagiaire (PDF)</a></li>
-      <li><a href="exemple/C01-4-corriges-baremes-sources.pdf" data-mesure="free_download">Corrigés, barèmes et passages cités (PDF)</a></li>
-      <li><a href="exemple/support-gestion-professionnelle-du-temps.pdf">Le support de cours utilisé (PDF, 22 pages)</a></li>
+      <li><a href="exemple/${sample.zip}" data-mesure="sample_download">Archive complète (ZIP, ${sample.zipKb} Ko)</a> <span class="muted small">DOCX, PDF et CSV</span></li>
+      <li><a href="exemple/dossier-preuves-indicateurs-8-11.pdf" data-mesure="sample_download">Dossier de preuves indicateurs 8 et 11 (PDF)</a></li>
+      <li><a href="exemple/C01-1-positionnement-stagiaire.pdf" data-mesure="sample_download">Test de positionnement, version stagiaire (PDF)</a></li>
+      <li><a href="exemple/C01-2-fin-de-formation-stagiaire.pdf" data-mesure="sample_download">Évaluation de fin de formation, version stagiaire (PDF)</a></li>
+      <li><a href="exemple/C01-4-corriges-baremes-sources.pdf" data-mesure="sample_download">Corrigés, barèmes et passages cités (PDF)</a></li>
+      <li><a href="exemple/support-gestion-professionnelle-du-temps.pdf" data-mesure="sample_download">Le support de cours utilisé (PDF, 22 pages)</a></li>
     </ul>
     <p class="small muted">Source : Wikiversité, leçon « Gestion professionnelle du temps », contributeurs de Wikiversité, révisions du 9 avril 2016 au 10 juillet 2026 extraites le 13/10/2026, licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a>. Le support et les évaluations de l’exemple sont diffusés sous la même licence. Les objectifs du cours ont été reformulés pour être évaluables ; la durée et le public de la fiche programme sont des valeurs d’exemple.</p>
   </div>

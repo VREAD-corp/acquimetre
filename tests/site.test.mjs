@@ -106,3 +106,13 @@ test('CRO pass 2026-10-18: rd-hero (POOLED-READING-01), real excerpt, breadcrumb
   assert.equal(faq.mainEntity.length, visible.length);
   for (const [, d] of read(join(DOCS, 'sitemap.xml')).matchAll(/<lastmod>([^<]+)<\/lastmod>/g)) assert.match(d, /^2026-\d\d-\d\d$/);
 });
+
+test('POOLED-READING-02: the free example (PDF) is a first-screen button (sample_click); its files send sample_download', () => {
+  const html = read(join(DOCS, 'index.html'));
+  const ctas = html.match(/<div class="ctas">[\s\S]*?<\/div>/)[0];
+  assert.match(ctas, /data-mesure="sample_click" href="exemple\/C01-4-corriges-baremes-sources\.pdf">Voir l’exemple gratuit \(PDF\)<\/a>/);
+  assert.ok(existsSync(join(DOCS, 'exemple', 'C01-4-corriges-baremes-sources.pdf')));
+  assert.ok(!/free_download/.test(html), 'no free_download left on the home');
+  const ex = html.match(/<section class="block" id="exemple"[\s\S]*?<\/section>/)[0];
+  assert.ok((ex.match(/data-mesure="sample_download"/g) || []).length >= 5);
+});
