@@ -18,7 +18,8 @@ export function loadSalesConfig() {
   const fail = (m) => { throw new Error(`${file}: ${m}`); };
   if (typeof c.SALES_OPEN !== 'boolean') fail('SALES_OPEN must be true or false');
   if (c.VAT !== 'franchise293B') fail("VAT must be 'franchise293B' (prices are net)");
-  if (!c.products || c.products['eval-8-11'] !== 24900 || c.products['eval-8-11-kit'] !== 19900) fail('products must be {eval-8-11: 24900, eval-8-11-kit: 19900} (Config.js of octave-checkout is the authority)');
+  // One offer since 2026-10-18 (the Kit Qualiopi buyers' price and its code were retired: no cross-promotion with Jalonel).
+  if (!c.products || c.products['eval-8-11'] !== 24900 || Object.keys(c.products).length !== 1) fail('products must be {eval-8-11: 24900} (Config.js of octave-checkout is the authority)');
   if (c.product !== 'eval-8-11' || c.amount !== c.products['eval-8-11']) fail('product/amount must be the default offer eval-8-11');
   if (c.SALES_OPEN) {
     const test = process.env.SALES_ALLOW_TEST === '1';
@@ -60,7 +61,7 @@ const sample = {
   questions: check.items.length,
   words: extract.files.find((f) => f.kind === 'pdf').words.toLocaleString('fr-FR').replace(/\s/g, ' '),
 };
-const prices = { full: SALES.products['eval-8-11'], kit: SALES.products['eval-8-11-kit'], open: OPEN, sample };
+const prices = { full: SALES.products['eval-8-11'], open: OPEN, sample };
 
 const HUB = 'https://outils.vread.fr/';
 /** Breadcrumb trail: outils.vread.fr > Acquimètre > page (crumb = page label, '' on the home). */
@@ -131,7 +132,6 @@ const serviceLd = {
   provider: { '@type': 'Organization', '@id': 'https://outils.vread.fr/#org', name: 'READ FRANCE SAS', url: 'https://outils.vread.fr/', email: CONTACT, address: { '@type': 'PostalAddress', streetAddress: '11 rue Rouvet', postalCode: '75019', addressLocality: 'Paris', addressCountry: 'FR' } },
   offers: [
     { '@type': 'Offer', name: 'Tarif standard, 1 à 10 formations', price: (prices.full / 100).toFixed(2), priceCurrency: 'EUR', availability: OPEN ? 'https://schema.org/InStock' : 'https://schema.org/PreOrder', url: SITE + (OPEN ? 'commander.html' : ''), eligibleCustomerType: 'https://schema.org/Business', seller: { '@type': 'Organization', name: 'READ FRANCE SAS' } },
-    { '@type': 'Offer', name: 'Tarif acheteurs du Kit Qualiopi, 1 à 10 formations', price: (prices.kit / 100).toFixed(2), priceCurrency: 'EUR', availability: OPEN ? 'https://schema.org/InStock' : 'https://schema.org/PreOrder', url: SITE + (OPEN ? 'commander.html?offre=kit' : ''), eligibleCustomerType: 'https://schema.org/Business', seller: { '@type': 'Organization', name: 'READ FRANCE SAS' } },
   ],
 };
 const faqLd = {
@@ -149,7 +149,7 @@ const PAGES = [
 ];
 if (OPEN) {
   PAGES.push(
-    { path: 'commander.html', file: 'commander.html', crumb: 'Commander', title: 'Commander Acquimètre (vente aux professionnels)', description: `Commande des évaluations Qualiopi indicateurs 8 et 11 : ${prices.full / 100} € net, ou ${prices.kit / 100} € pour les acheteurs du Kit Qualiopi. Paiement par carte avec Stripe.`, body: commanderBody(prices), noindex: true, head: `<meta http-equiv="Content-Security-Policy" content="${CHECKOUT_CSP}">\n`, tail: '<script src="checkout/checkout-config.js"></script>\n<script src="https://js.stripe.com/v3/"></script>\n<script src="checkout/commander-extra.js"></script>\n<script src="checkout/pay.js"></script>\n' },
+    { path: 'commander.html', file: 'commander.html', crumb: 'Commander', title: 'Commander Acquimètre (vente aux professionnels)', description: `Commande des évaluations Qualiopi indicateurs 8 et 11 : ${prices.full / 100} € net pour 1 à 10 formations. Paiement par carte avec Stripe.`, body: commanderBody(prices), noindex: true, head: `<meta http-equiv="Content-Security-Policy" content="${CHECKOUT_CSP}">\n`, tail: '<script src="checkout/checkout-config.js"></script>\n<script src="https://js.stripe.com/v3/"></script>\n<script src="checkout/pay.js"></script>\n' },
     { path: 'commande.html', file: 'commande.html', title: 'Votre commande Acquimètre', description: 'Confirmation du paiement et lien d’envoi des supports.', body: commandeBody(), noindex: true, head: `<meta http-equiv="Content-Security-Policy" content="${PLAIN_CSP}">\n<meta name="referrer" content="no-referrer">\n`, tail: '<script src="checkout/checkout-config.js"></script>\n<script src="checkout/eval-order.js"></script>\n<script src="checkout/order.js"></script>\n' },
     { path: 'envoyer.html', file: 'envoyer.html', title: 'Envoyer vos supports de cours – Acquimètre', description: 'Dépôt sécurisé des supports de cours d’une commande Acquimètre.', body: envoyerBody(), noindex: true, head: `<meta http-equiv="Content-Security-Policy" content="${PLAIN_CSP}">\n<meta name="referrer" content="no-referrer">\n`, tail: '<script src="checkout/checkout-config.js"></script>\n<script src="checkout/upload.js"></script>\n' },
   );
@@ -162,8 +162,8 @@ for (const p of PAGES) write(p.file, layout(p));
 for (const f of ['styles.css', 'favicon.svg', 'mesure.js', 'cro.js', 'cro-goals.js', 'xp.js']) copyFileSync(join(ROOT, 'site/assets', f), join(OUT, f));
 if (OPEN) {
   for (const f of ['pay.js', 'order.js']) { mkdirSync(join(OUT, 'checkout'), { recursive: true }); copyFileSync(join(ROOT, 'site/checkout', f), join(OUT, 'checkout', f)); }
-  for (const f of ['commander-extra.js', 'eval-order.js', 'upload.js']) copyFileSync(join(ROOT, 'site/assets', f), join(OUT, 'checkout', f));
-  const offers = { 'eval-8-11': { amount: prices.full, termsVersion: TERMS_VERSION }, 'eval-8-11-kit': { amount: prices.kit, termsVersion: TERMS_VERSION } };
+  for (const f of ['eval-order.js', 'upload.js']) copyFileSync(join(ROOT, 'site/assets', f), join(OUT, 'checkout', f));
+  const offers = { 'eval-8-11': { amount: prices.full, termsVersion: TERMS_VERSION } };
   write('checkout/checkout-config.js', `// Generated by scripts/build.mjs from sales.config.json. Public by design.\nwindow.OCTAVE_PAY = ${JSON.stringify({ endpoint: SALES.endpoint, publishableKey: SALES.publishableKey, product: 'eval-8-11', offers, currency: 'eur', termsVersion: TERMS_VERSION, termsUrl: `${SITE}cgv-pro.html`, orderPage: 'commande.html', payLabel: 'Payer {prix} et recevoir le lien d’envoi', laterText: 'Si vous fermez cette page, votre commande est tout de même enregistrée dans les 10 minutes : la facture et le lien d’envoi de vos supports arrivent par e-mail.', quotesEnabled: false })};\n`);
 }
 // Sample: the full ZIP, the main PDFs and the input support (CC BY-SA 4.0).

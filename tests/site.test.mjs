@@ -33,11 +33,11 @@ test('committed build: offer, legal pages and sample; buy UI only when SALES_OPE
   }
 });
 
-test('home page: JSON-LD Service with the two prices (249 / 199 EUR, business only), FAQ, no rating or review', () => {
+test('home page: JSON-LD Service with its single price (249 EUR, business only), FAQ, no rating or review', () => {
   const html = read(join(DOCS, 'index.html'));
   const [svc, faq] = ld(html);
   assert.equal(svc['@type'], 'Service');
-  assert.deepEqual(svc.offers.map((o) => [o.price, o.priceCurrency, o.eligibleCustomerType]), [['249.00', 'EUR', 'https://schema.org/Business'], ['199.00', 'EUR', 'https://schema.org/Business']]);
+  assert.deepEqual(svc.offers.map((o) => [o.price, o.priceCurrency, o.eligibleCustomerType]), [['249.00', 'EUR', 'https://schema.org/Business']]);
   assert.equal(faq['@type'], 'FAQPage');
   assert.doesNotMatch(html, /aggregateRating|"review"/);
   assert.match(html, /269 non-conformit|en a causé 269/);
@@ -56,19 +56,17 @@ test('tracking: mesure.js = the octave-checkout master with the site id fixed to
   assert.match(read(join(DOCS, 'index.html')), /<script src="cro\.js" data-site="acquimetre" data-api="https:\/\/script\.google\.com\/macros\/s\/AKfycbzD1IRL8Q[^"]+\/exec" data-hosts="outils\.vread\.fr"/);
 });
 
-test('open build: commander (2 offers, rights attestation, kit proof, CSP), commande (upload link), envoyer; checkout config = catalog prices and terms', () => {
+test('open build: commander (one offer, rights attestation, CSP), commande (upload link), envoyer; checkout config = catalog prices and terms', () => {
   const out = openBuild();
   const c = read(join(out, 'commander.html'));
   assert.match(c, /name="product" value="eval-8-11" checked/);
-  assert.match(c, /name="product" value="eval-8-11-kit"/);
   assert.match(c, /name="rightsAttested" data-octave-extra="bool" required/);
-  assert.match(c, /name="kitDeclared" data-octave-extra="bool"/);
   assert.match(c, /name="courses" data-octave-extra min="1" max="10"/);
   assert.match(c, /Content-Security-Policy" content="default-src 'self'; script-src 'self' https:\/\/js\.stripe\.com/);
   assert.match(c, /version du 13 octobre 2026/);
   const cfgJs = read(join(out, 'checkout/checkout-config.js'));
   const cfg = JSON.parse(cfgJs.slice(cfgJs.indexOf('=') + 1).trim().replace(/;$/, ''));
-  assert.deepEqual(cfg.offers, { 'eval-8-11': { amount: 24900, termsVersion: 'cgv-pro-eval-2026-10-13' }, 'eval-8-11-kit': { amount: 19900, termsVersion: 'cgv-pro-eval-2026-10-13' } });
+  assert.deepEqual(cfg.offers, { 'eval-8-11': { amount: 24900, termsVersion: 'cgv-pro-eval-2026-10-13' } });
   assert.equal(cfg.orderPage, 'commande.html');
   const order = read(join(out, 'commande.html'));
   assert.ok(order.indexOf('checkout/eval-order.js') < order.indexOf('checkout/order.js'), 'eval-order.js must read the secret before order.js removes it');
@@ -97,6 +95,8 @@ test('CRO pass 2026-10-18: rd-hero (POOLED-READING-01), real excerpt, breadcrumb
   assert.equal(x.q1choices['abcd'.indexOf(x.q1key)], i1.answer);
   assert.equal(x.q2key, i2.answer); assert.equal(x.q1quote, i1.source_quote); assert.equal(x.q2quote, i2.source_quote);
   for (const page of readdirSync(DOCS).filter((f) => f.endsWith('.html'))) assert.doesNotMatch(read(join(DOCS, page)), /jalonel/i, page);
+  // No Kit Qualiopi offer or code since 2026-10-18 (the kit is a Jalonel product): pages, checkout scripts and config.
+  for (const f of [...readdirSync(DOCS).filter((f) => /\.(html|js)$/.test(f)), ...readdirSync(join(DOCS, 'checkout')).map((f) => 'checkout/' + f)]) assert.doesNotMatch(read(join(DOCS, f)), /kit qualiopi|KITQ|eval-8-11-kit|offre=kit/i, f);
   assert.match(home, /href="https:\/\/outils\.vread\.fr\/a-propos\/"/);
   const cgv = read(join(DOCS, 'cgv-pro.html'));
   assert.match(cgv, /<nav class="crumbs wrap" aria-label="Fil d’Ariane">/);

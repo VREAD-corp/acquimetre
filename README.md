@@ -4,10 +4,11 @@ Done-for-you evaluations for Qualiopi indicators 8 and 11, written from the cust
 A READ FRANCE SAS service (venture V4-01 of `octave-asset-ventures`).
 
 - **Site:** https://outils.vread.fr/acquimetre/ (GitHub Pages from `docs/`, built by `npm run build`)
-- **Price:** 249 € net for 1 to 10 courses; 199 € for Kit Qualiopi buyers (code `KITQ199` from the kit delivery
-  e-mail, or a self-declaration). TVA non applicable, art. 293 B du CGI. French businesses only (SIREN).
-- **Payments, invoices, uploads, alerts:** `VREAD-corp/octave-checkout` (Apps Script web app, products `eval-8-11`
-  and `eval-8-11-kit`, kind `service`, `gas/src/Eval.js`). Terms: `cgv-pro-eval-2026-10-13` (`cgv-pro.html`).
+- **Price:** 249 € net for 1 to 10 courses. TVA non applicable, art. 293 B du CGI. French businesses only (SIREN).
+  The Kit Qualiopi buyers' price (199 €, code `KITQ199`) was retired on 2026-10-18 with no sale: the kit is a Jalonel
+  product and Acquimètre (a READ FRANCE reading site) carries no cross-promotion with Jalonel.
+- **Payments, invoices, uploads, alerts:** `VREAD-corp/octave-checkout` (Apps Script web app, product `eval-8-11`,
+  kind `service`, `gas/src/Eval.js`). Terms: `cgv-pro-eval-2026-10-13` (`cgv-pro.html`).
 
 ## Order flow
 
@@ -43,7 +44,7 @@ A READ FRANCE SAS service (venture V4-01 of `octave-asset-ventures`).
   (`engine/qa.ts`; steps `cold` and `judge`, see [qa/README.md](qa/README.md)). It replaced, on 2026-10-16, the copy
   vendored from `VREAD-corp/acquiz`. Item rules (`engine/lib/gen/schema.ts`) and PPTX extraction stay local.
   **The acquiz PDF writer (`src/lib/pdf/`) is not used.** PPTX extraction is new (`engine/lib/parse/pptx.ts`).
-- Documents go through the Kit Qualiopi chain: Markdown → DOCX (`engine/md2docx.mjs`, from
+- Documents go through the same chain as READ FRANCE's document kits: Markdown → DOCX (`engine/md2docx.mjs`, from
   `qualiopi-kit-content/scripts/md2docx.mjs`) → PDF (LibreOffice headless).
 - Per course: positioning test (ind. 8, decision rule), end-of-training evaluation and J+30 check (ind. 11), trainer
   key with cited passages and pages, results sheet per learner, CSV; per order: evidence file + read-me.

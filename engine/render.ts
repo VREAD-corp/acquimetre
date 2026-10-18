@@ -1,4 +1,4 @@
-// Step 4 of the offline fulfilment: checked drafts -> Markdown -> DOCX (the Kit Qualiopi converter, md2docx.mjs)
+// Step 4 of the offline fulfilment: checked drafts -> Markdown -> DOCX (md2docx.mjs)
 // -> PDF (LibreOffice headless, isolated profile) + one CSV per course + the evidence file for indicators 8 and 11
 // -> one ZIP per order. Same chain as qualiopi-kit-content/scripts/build.mjs; no PDF code of our own.
 import { execFileSync } from "node:child_process";
@@ -99,7 +99,7 @@ function trainerMd(order: Order, d: Draft, r: CheckReport): string {
       const R = d.positioning.rule;
       out.push(
         "**Règle de décision, écrite avant de faire passer le test**",
-        `| Résultat | Décision | Action et trace |\n|---|---|---|\n| Score < ${R.standard} % | Parcours standard avec points d’attention | Repérer les objectifs à 0 point et prévoir un accompagnement renforcé sur ces objectifs ; noter la décision dans la fiche de résultats |\n| ${R.standard} % ≤ score < ${R.light} % | Parcours standard | Aucune adaptation |\n| Score ≥ ${R.light} % | Parcours allégé ou approfondissement | Proposer d’alléger les séquences déjà maîtrisées (objectifs à 100 %) ou des exercices d’approfondissement ; ajuster la convention si la durée change |\n| Aménagement signalé | Étude avec le référent handicap | Fiche T34 du Kit Qualiopi ou votre propre procédure |`,
+        `| Résultat | Décision | Action et trace |\n|---|---|---|\n| Score < ${R.standard} % | Parcours standard avec points d’attention | Repérer les objectifs à 0 point et prévoir un accompagnement renforcé sur ces objectifs ; noter la décision dans la fiche de résultats |\n| ${R.standard} % ≤ score < ${R.light} % | Parcours standard | Aucune adaptation |\n| Score ≥ ${R.light} % | Parcours allégé ou approfondissement | Proposer d’alléger les séquences déjà maîtrisées (objectifs à 100 %) ou des exercices d’approfondissement ; ajuster la convention si la durée change |\n| Aménagement signalé | Étude avec le référent handicap | Votre procédure d’accueil des personnes en situation de handicap |`,
         `Prérequis : ${d.prerequisites.map(esc).join(" ; ")}. Le test ne sert donc pas à refuser une entrée en formation.`,
       );
     } else {
@@ -155,7 +155,7 @@ function evidenceMd(order: Order, courses: { d: Draft; r: CheckReport; files: st
     "## Validation par l’organisme",
     `| Formation | Validé par (nom, fonction) | Date | Modifications apportées | Signature |\n|---|---|---|---|---|\n${courses.map(({ d }) => `| ${courseId(d.course)} ${esc(d.title)} | [ ] | [JJ/MM/AAAA] | [aucune / liste] | |`).join("\n")}`,
     "## Où classer ces documents",
-    "Dans l’index par indicateur de votre dossier qualité (document D05 du Kit Qualiopi si vous l’utilisez) : indicateur 8 pour les tests de positionnement et la règle de décision, indicateur 11 pour les évaluations de fin de formation et à J+30, et pour chaque stagiaire la fiche de résultats remplie.",
+    "Dans l’index par indicateur de votre dossier qualité : indicateur 8 pour les tests de positionnement et la règle de décision, indicateur 11 pour les évaluations de fin de formation et à J+30, et pour chaque stagiaire la fiche de résultats remplie.",
   ].join("\n\n") + "\n";
 }
 

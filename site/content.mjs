@@ -58,9 +58,8 @@ export function heroExcerpt(sample) {
 }
 
 /** FAQ: the same entries feed the visible <details> and the FAQPage JSON-LD (1:1). */
-export function faqItems({ kit }) {
+export function faqItems() {
   return [
-    ['q-kit', 'J’ai déjà le Kit Qualiopi : qu’est-ce que cela ajoute ?', `Le kit donne les trames (T04 fiche de positionnement, T29 test avec barème, T06 suivi et évaluation des acquis). Il ne peut pas contenir les questions de vos formations. Acquimètre remplit ces trames avec des questions tirées de vos supports. Les acheteurs du kit paient ${eur(kit)}.`],
     ['q-formations', 'Que compte une « formation » ?', 'Un programme avec ses objectifs et son support, quelle que soit sa durée. Deux sessions du même programme comptent pour une formation. Un parcours très long (plus de 200 pages de support) peut être découpé en deux formations : nous vous le proposons avant de commencer.'],
     ['q-objectifs', 'Mes objectifs de programme sont flous. Comment faites-vous ?', 'Nous les reformulons en objectifs évaluables à partir du plan de votre support, et nous l’indiquons dans les corrigés. Vous les gardez ou les remplacez par ceux de votre fiche programme avant de signer le tableau de validation.'],
     ['q-delai', 'Et si la livraison dépasse 5 jours ouvrés ?', 'Vous pouvez demander le remboursement intégral si l’archive n’est pas livrée 10 jours ouvrés après votre envoi complet (article 6 des CGV).'],
@@ -72,7 +71,7 @@ export function faqItems({ kit }) {
 
 /** Home page: the offer, the sample, the price, the process, the limits, the FAQ. */
 export function homeBody(p) {
-  const { full, kit, sample, open } = p;
+  const { full, sample, open } = p;
   const cta = open
     ? `<a class="btn btn-primary" data-cta href="commander.html">Commander : ${eur(full)} net</a>`
     : `<a class="btn btn-primary" href="mailto:${CONTACT}?subject=Acquim%C3%A8tre">Écrire pour réserver</a>`;
@@ -85,7 +84,7 @@ export function homeBody(p) {
       <p class="lead">Pour chaque formation : test de positionnement, évaluation de fin de formation et évaluation à J+30, avec corrigés, barèmes et la page de votre support d’où vient chaque question.</p>
       <div class="ctas">${cta}<a class="btn btn-ghost" data-cta data-mesure="free_download" href="exemple/${sample.zip}">Télécharger l’exemple (ZIP)</a></div>
       <ul class="facts">
-        <li><strong>${eur(full)} net</strong> pour 1 à 10 formations, TVA non applicable (art. 293 B du CGI). Acheteurs du Kit Qualiopi V10 de READ FRANCE : ${eur(kit)}.</li>
+        <li><strong>${eur(full)} net</strong> pour 1 à 10 formations, TVA non applicable (art. 293 B du CGI).</li>
         <li>Archive ZIP : DOCX modifiables, PDF et CSV. De 28 à 44 questions par formation (${sample.questions} dans l’exemple).</li>
         <li>Livraison par e-mail sous 5 jours ouvrés après votre envoi complet. Remboursement intégral si elle n’arrive pas 10 jours ouvrés après cet envoi (<a href="cgv-pro.html">CGV, art. 6</a>).</li>
       </ul>
@@ -183,7 +182,6 @@ ${heroExcerpt(sample)}
     <h2>Prix</h2>
     <div class="grid2">
       <div class="card"><p class="price">${eur(full)} <span class="small muted">net</span></p><p>De 1 à 10 formations, en une commande. Soit 24,90 € par formation pour 10 formations. Paiement unique, pas d’abonnement.</p>${open ? '<p><a class="btn btn-primary btn-sm" href="commander.html">Commander</a></p>' : ''}</div>
-      <div class="card"><p class="price">${eur(kit)} <span class="small muted">net</span></p><p>Même prestation pour les organismes qui ont acheté le Kit Qualiopi : saisissez le code reçu dans l’e-mail de livraison du kit, ou déclarez l’avoir acheté.</p>${open ? '<p><a class="btn btn-ghost btn-sm" href="commander.html?offre=kit">Commander au tarif kit</a></p>' : ''}</div>
     </div>
     <p class="small muted">TVA non applicable, art. 293 B du CGI : le prix affiché est le prix payé. Vente aux professionnels uniquement (SIREN demandé). Conditions : <a href="cgv-pro.html">CGV professionnels</a>.</p>
   </div>
@@ -235,7 +233,7 @@ ${faqItems(p).map(([id, q, r]) => `    <details id="${id}"><summary>${q}</summar
 
 /** Order page body (Stripe Payment Element; same field names and ids as octave-checkout gas/web/index.html). */
 export function commanderBody(p) {
-  const { full, kit } = p;
+  const { full } = p;
   return `<section class="wrap" aria-labelledby="commander-h">
 <h1 id="commander-h">Commander Acquimètre</h1>
 <p>Évaluations Qualiopi indicateurs 8 et 11 pour 1 à 10 formations, rédigées à partir de vos supports. Vente réservée aux professionnels (entreprises immatriculées en France, SIREN obligatoire). Après le paiement, vous recevez la facture et le lien d’envoi de vos supports ; la livraison a lieu sous 5 jours ouvrés après votre envoi complet.</p>
@@ -251,14 +249,8 @@ export function commanderBody(p) {
 <form id="octave-pay" class="checkout-form card" novalidate>
   <fieldset class="field-group"><legend>Tarif</legend>
     <label class="offer-choice"><input type="radio" name="product" value="eval-8-11" checked><span><strong>Tarif standard</strong> : <span data-price-for="eval-8-11">${eur(full)} net (TVA non applicable, art. 293 B du CGI)</span></span></label>
-    <label class="offer-choice"><input type="radio" name="product" value="eval-8-11-kit"><span><strong>Acheteurs du Kit Qualiopi V10 de READ FRANCE</strong> : <span data-price-for="eval-8-11-kit">${eur(kit)} net (TVA non applicable, art. 293 B du CGI)</span></span></label>
     <p class="small muted">Prix retenu : <span id="product-price">${eur(full)} net (TVA non applicable, art. 293 B du CGI)</span></p>
   </fieldset>
-  <div id="kit-proof" class="field-group" hidden>
-    <label class="field"><span>Code reçu dans l’e-mail de livraison du Kit Qualiopi (facultatif)</span>
-      <input type="text" name="kitCode" data-octave-extra maxlength="20" autocomplete="off"></label>
-    <label class="check"><input type="checkbox" name="kitDeclared" data-octave-extra="bool"><span>Sans code : je déclare que l’entreprise ci-dessous a acheté le Kit Qualiopi V10. En cas de déclaration inexacte, la différence de 50 € pourra être facturée (CGV, article 4).</span></label>
-  </div>
   <label class="field"><span>Nombre de formations à traiter (1 à 10)</span>
     <input type="number" name="courses" data-octave-extra min="1" max="10" step="1" value="3" required></label>
   <label class="field"><span>E-mail professionnel (facture, lien d’envoi des supports, livraison)</span>

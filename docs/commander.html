@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Commander Acquimètre (vente aux professionnels)</title>
-<meta name="description" content="Commande des évaluations Qualiopi indicateurs 8 et 11 : 249 € net, ou 199 € pour les acheteurs du Kit Qualiopi. Paiement par carte avec Stripe.">
+<meta name="description" content="Commande des évaluations Qualiopi indicateurs 8 et 11 : 249 € net pour 1 à 10 formations. Paiement par carte avec Stripe.">
 <meta name="robots" content="noindex">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Acquimètre">
 <meta property="og:title" content="Commander Acquimètre (vente aux professionnels)">
-<meta property="og:description" content="Commande des évaluations Qualiopi indicateurs 8 et 11 : 249 € net, ou 199 € pour les acheteurs du Kit Qualiopi. Paiement par carte avec Stripe.">
+<meta property="og:description" content="Commande des évaluations Qualiopi indicateurs 8 et 11 : 249 € net pour 1 à 10 formations. Paiement par carte avec Stripe.">
 <meta property="og:url" content="https://outils.vread.fr/acquimetre/commander.html">
 <meta name="theme-color" content="#0f5c4d">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -45,14 +45,8 @@
 <form id="octave-pay" class="checkout-form card" novalidate>
   <fieldset class="field-group"><legend>Tarif</legend>
     <label class="offer-choice"><input type="radio" name="product" value="eval-8-11" checked><span><strong>Tarif standard</strong> : <span data-price-for="eval-8-11">249 € net (TVA non applicable, art. 293 B du CGI)</span></span></label>
-    <label class="offer-choice"><input type="radio" name="product" value="eval-8-11-kit"><span><strong>Acheteurs du Kit Qualiopi V10 de READ FRANCE</strong> : <span data-price-for="eval-8-11-kit">199 € net (TVA non applicable, art. 293 B du CGI)</span></span></label>
     <p class="small muted">Prix retenu : <span id="product-price">249 € net (TVA non applicable, art. 293 B du CGI)</span></p>
   </fieldset>
-  <div id="kit-proof" class="field-group" hidden>
-    <label class="field"><span>Code reçu dans l’e-mail de livraison du Kit Qualiopi (facultatif)</span>
-      <input type="text" name="kitCode" data-octave-extra maxlength="20" autocomplete="off"></label>
-    <label class="check"><input type="checkbox" name="kitDeclared" data-octave-extra="bool"><span>Sans code : je déclare que l’entreprise ci-dessous a acheté le Kit Qualiopi V10. En cas de déclaration inexacte, la différence de 50 € pourra être facturée (CGV, article 4).</span></label>
-  </div>
   <label class="field"><span>Nombre de formations à traiter (1 à 10)</span>
     <input type="number" name="courses" data-octave-extra min="1" max="10" step="1" value="3" required></label>
   <label class="field"><span>E-mail professionnel (facture, lien d’envoi des supports, livraison)</span>
@@ -100,7 +94,6 @@
 </div></footer>
 <script src="checkout/checkout-config.js"></script>
 <script src="https://js.stripe.com/v3/"></script>
-<script src="checkout/commander-extra.js"></script>
 <script src="checkout/pay.js"></script>
 </body>
 </html>
